@@ -5619,3 +5619,253 @@ TypeError: The view function for 'home' did not return a valid response. The fun
 19-Dec-25 15:59:05 - [TIMING LOG] Saved to time_logs\timing_log_20251219_155905_588601.json
 19-Dec-25 15:59:05 - [TOTAL TIME] 3.87s
 19-Dec-25 15:59:05 - ================================================================================
+19-Dec-25 16:05:02 - Loaded 292 indexed C# files from indexed_cs_files.json
+19-Dec-25 16:05:02 - Using DashScope/Qwen API with international compatible endpoint
+19-Dec-25 16:05:04 - Using HYDE model: qwen-plus
+19-Dec-25 16:05:04 - Using Answer model: qwen-flash
+19-Dec-25 16:06:51 - Reranker initialized successfully
+19-Dec-25 16:06:52 - Loaded 4 table set(s)
+19-Dec-25 16:06:52 -   Table set 1: _ExternalAssets_method / _ExternalAssets_class
+19-Dec-25 16:06:52 -   Table set 2: _GameModules_method / _GameModules_class
+19-Dec-25 16:06:52 -   Table set 3: Scripts_method / Scripts_class
+19-Dec-25 16:06:52 -   Table set 4: _GameData_method / _GameData_class
+19-Dec-25 16:07:02 - [QUERY] @AbilityBearTrap.cs what are the methods defined
+19-Dec-25 16:07:02 - [FILE RESOLUTION] Resolved 1 token(s) to 1 path(s)
+19-Dec-25 16:07:02 -   AbilityBearTrap.cs -> c:\users\cpu12391\desktop\gdd_rag_gradio\codebase_rag\tank_online_1-dev\assets\_gamemodules\tankfusionmodule\scripts\ability\abilitybeartrap.cs
+19-Dec-25 16:07:02 - [QUERY] File filters resolved: ['C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityBearTrap.cs']
+19-Dec-25 16:07:02 - [QUERY] Parsed @cs filters: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\ability\\abilitybeartrap.cs']
+19-Dec-25 16:07:02 - [CONTEXT RETRIEVAL] Query: what are the methods defined
+19-Dec-25 16:07:02 - [FILE INDEX] Found 1 table prefix(es) via SQLite index: {'_GameModules'}
+19-Dec-25 16:07:02 - [CONTEXT RETRIEVAL] Using table set with prefix: _GameModules (contains target files)
+19-Dec-25 16:07:02 - [CONTEXT RETRIEVAL] Filtered to 1 table set(s) containing target files
+19-Dec-25 16:07:02 - [CONTEXT RETRIEVAL] Performing direct file lookup for 1 file(s)
+19-Dec-25 16:07:02 - [CONTEXT RETRIEVAL] Direct lookup found 8 method chunks from target files
+19-Dec-25 16:07:02 - [CONTEXT RETRIEVAL] Direct lookup found 2 class chunks from target files
+19-Dec-25 16:07:08 - [CONTEXT RETRIEVAL] File filters applied: 1 file(s)
+19-Dec-25 16:07:08 - [CONTEXT RETRIEVAL] Allowed paths: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\ability\\abilitybeartrap.cs']...
+19-Dec-25 16:07:08 - [CONTEXT RETRIEVAL] Sample method paths in DB (before filter): ['..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityBearTrap.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityBearTrap.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityBearTrap.cs']
+19-Dec-25 16:07:08 - [CONTEXT RETRIEVAL] Method results: 28 -> 8 after file filtering
+19-Dec-25 16:07:08 - [CONTEXT RETRIEVAL] Sample class paths in DB (before filter): ['..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityBearTrap.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityBearTrap.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\MatchIndexs.cs']
+19-Dec-25 16:07:08 - [CONTEXT RETRIEVAL] Class results: 22 -> 2 after file filtering
+19-Dec-25 16:07:09 - [HYDE v2 GENERATION] Completed in 0.83s | TTFT: 0.31s | Tokens: 11 | Rate: 21.3 tokens/s
+19-Dec-25 16:07:10 - [CONTEXT RETRIEVAL] Selected method chunks:
+19-Dec-25 16:07:10 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Ability\AbilityBearTrap.cs | class=AbilityBearTrap | name=GetCustomPropertiesRuntime
+19-Dec-25 16:07:10 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Ability\AbilityBearTrap.cs | class=AbilityBearTrap | name=AbilityAllTimeUpdateHandler
+19-Dec-25 16:07:10 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Ability\AbilityBearTrap.cs | class=AbilityBearTrap | name=OnAbilityTrigged
+19-Dec-25 16:07:10 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Ability\AbilityBearTrap.cs | class=AbilityBearTrap | name=Initialize
+19-Dec-25 16:07:10 - [CONTEXT RETRIEVAL] Selected class chunks:
+19-Dec-25 16:07:10 -   CLASS  | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Ability\AbilityBearTrap.cs | class=BearTrapAbilityProperty
+19-Dec-25 16:07:10 -   CLASS  | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Ability\AbilityBearTrap.cs | class=AbilityBearTrap
+19-Dec-25 16:07:10 - [CONTEXT RETRIEVAL] Completed in 8.04s | Vector search: 7.20s | Context: 10685 chars
+19-Dec-25 16:07:15 - [ANSWER GENERATION] Completed in 5.74s | TTFT: 0.34s | Tokens: 114 | Rate: 21.1 tokens/s | Response: 2003 chars
+19-Dec-25 16:07:15 - [TIMING LOG] Saved to time_logs\timing_log_20251219_160715_977727.json
+19-Dec-25 16:07:15 - [TOTAL TIME] 13.84s
+19-Dec-25 16:07:15 - ================================================================================
+19-Dec-25 16:07:23 - [QUERY] @AbilityFireDash.cs summarize this
+19-Dec-25 16:07:23 - [FILE RESOLUTION] Resolved 1 token(s) to 1 path(s)
+19-Dec-25 16:07:23 -   AbilityFireDash.cs -> c:\users\cpu12391\desktop\gdd_rag_gradio\codebase_rag\tank_online_1-dev\assets\_gamemodules\tankfusionmodule\scripts\ability\abilityfiredash.cs
+19-Dec-25 16:07:23 - [QUERY] File filters resolved: ['C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityFireDash.cs']
+19-Dec-25 16:07:23 - [QUERY] Parsed @cs filters: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\ability\\abilityfiredash.cs']
+19-Dec-25 16:07:23 - [CONTEXT RETRIEVAL] Query: summarize this
+19-Dec-25 16:07:23 - [FILE INDEX] Found 1 table prefix(es) via SQLite index: {'_GameModules'}
+19-Dec-25 16:07:23 - [CONTEXT RETRIEVAL] Using table set with prefix: _GameModules (contains target files)
+19-Dec-25 16:07:23 - [CONTEXT RETRIEVAL] Filtered to 1 table set(s) containing target files
+19-Dec-25 16:07:23 - [CONTEXT RETRIEVAL] Performing direct file lookup for 1 file(s)
+19-Dec-25 16:07:24 - [CONTEXT RETRIEVAL] Direct lookup found 11 method chunks from target files
+19-Dec-25 16:07:24 - [CONTEXT RETRIEVAL] Direct lookup found 2 class chunks from target files
+19-Dec-25 16:07:24 - [CONTEXT RETRIEVAL] File filters applied: 1 file(s)
+19-Dec-25 16:07:24 - [CONTEXT RETRIEVAL] Allowed paths: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\ability\\abilityfiredash.cs']...
+19-Dec-25 16:07:24 - [CONTEXT RETRIEVAL] Sample method paths in DB (before filter): ['..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityFireDash.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityFireDash.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityFireDash.cs']
+19-Dec-25 16:07:24 - [CONTEXT RETRIEVAL] Method results: 31 -> 11 after file filtering
+19-Dec-25 16:07:24 - [CONTEXT RETRIEVAL] Sample class paths in DB (before filter): ['..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityFireDash.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityFireDash.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\README.md']
+19-Dec-25 16:07:24 - [CONTEXT RETRIEVAL] Class results: 21 -> 2 after file filtering
+19-Dec-25 16:07:26 - [HYDE v2 GENERATION] Completed in 1.51s | TTFT: 0.28s | Tokens: 17 | Rate: 13.8 tokens/s
+19-Dec-25 16:07:26 - [CONTEXT RETRIEVAL] Selected method chunks:
+19-Dec-25 16:07:26 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Ability\AbilityFireDash.cs | class=AbilityFireDash | name=OnAbilityTrigged
+19-Dec-25 16:07:26 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Ability\AbilityFireDash.cs | class=AbilityFireDash | name=AbilityUpdateHandler
+19-Dec-25 16:07:26 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Ability\AbilityFireDash.cs | class=AbilityFireDash | name=AbilityAllTimeUpdateHandler
+19-Dec-25 16:07:26 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Ability\AbilityFireDash.cs | class=AbilityFireDash | name=DashUpdate
+19-Dec-25 16:07:26 - [CONTEXT RETRIEVAL] Selected class chunks:
+19-Dec-25 16:07:26 -   CLASS  | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Ability\AbilityFireDash.cs | class=AbilityFireDash
+19-Dec-25 16:07:26 -   CLASS  | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Ability\AbilityFireDash.cs | class=FireDashAbilityProperty
+19-Dec-25 16:07:26 - [CONTEXT RETRIEVAL] Completed in 2.79s | Vector search: 1.27s | Context: 14142 chars
+19-Dec-25 16:07:31 - [ANSWER GENERATION] Completed in 4.92s | TTFT: 0.37s | Tokens: 98 | Rate: 21.5 tokens/s | Response: 1740 chars
+19-Dec-25 16:07:31 - [TIMING LOG] Saved to time_logs\timing_log_20251219_160731_735895.json
+19-Dec-25 16:07:31 - [TOTAL TIME] 7.76s
+19-Dec-25 16:07:31 - ================================================================================
+19-Dec-25 16:07:35 - [QUERY] @CollectionExtensions.cs summarise this
+19-Dec-25 16:07:35 - [FILE RESOLUTION] Resolved 1 token(s) to 1 path(s)
+19-Dec-25 16:07:35 -   CollectionExtensions.cs -> c:\users\cpu12391\desktop\gdd_rag_gradio\codebase_rag\tank_online_1-dev\assets\_gamemodules\gamedatamodule\scripts\collectionextensions.cs
+19-Dec-25 16:07:35 - [QUERY] File filters resolved: ['C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\CollectionExtensions.cs']
+19-Dec-25 16:07:35 - [QUERY] Parsed @cs filters: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\gamedatamodule\\scripts\\collectionextensions.cs']
+19-Dec-25 16:07:35 - [CONTEXT RETRIEVAL] Query: summarise this
+19-Dec-25 16:07:35 - [FILE INDEX] Found 1 table prefix(es) via SQLite index: {'_GameModules'}
+19-Dec-25 16:07:35 - [CONTEXT RETRIEVAL] Using table set with prefix: _GameModules (contains target files)
+19-Dec-25 16:07:35 - [CONTEXT RETRIEVAL] Filtered to 1 table set(s) containing target files
+19-Dec-25 16:07:35 - [CONTEXT RETRIEVAL] Performing direct file lookup for 1 file(s)
+19-Dec-25 16:07:36 - [CONTEXT RETRIEVAL] Direct lookup found 1 method chunks from target files
+19-Dec-25 16:07:36 - [CONTEXT RETRIEVAL] Direct lookup found 1 class chunks from target files
+19-Dec-25 16:07:36 - [CONTEXT RETRIEVAL] File filters applied: 1 file(s)
+19-Dec-25 16:07:36 - [CONTEXT RETRIEVAL] Allowed paths: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\gamedatamodule\\scripts\\collectionextensions.cs']...
+19-Dec-25 16:07:36 - [CONTEXT RETRIEVAL] Sample method paths in DB (before filter): ['..\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\CollectionExtensions.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Gameplay\\NetTankStats.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\GameStateMachineModule\\IGameState.cs']
+19-Dec-25 16:07:36 - [CONTEXT RETRIEVAL] Method results: 21 -> 1 after file filtering
+19-Dec-25 16:07:38 - [CONTEXT RETRIEVAL] Sample class paths in DB (before filter): ['..\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\CollectionExtensions.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\README.md', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Gameplay\\UpgradeManager.cs']
+19-Dec-25 16:07:38 - [CONTEXT RETRIEVAL] Class results: 21 -> 1 after file filtering
+19-Dec-25 16:07:40 - [HYDE v2 GENERATION] Completed in 0.59s | TTFT: 0.33s | Tokens: 7 | Rate: 26.8 tokens/s
+19-Dec-25 16:07:40 - [CONTEXT RETRIEVAL] Selected method chunks:
+19-Dec-25 16:07:40 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\GameDataModule\Scripts\CollectionExtensions.cs | class=CollectionExtensions | name=GetCollection
+19-Dec-25 16:07:40 - [CONTEXT RETRIEVAL] Selected class chunks:
+19-Dec-25 16:07:40 -   CLASS  | file=..\tank_online_1-dev\Assets\_GameModules\GameDataModule\Scripts\CollectionExtensions.cs | class=CollectionExtensions
+19-Dec-25 16:07:40 - [CONTEXT RETRIEVAL] Completed in 5.12s | Vector search: 4.48s | Context: 1393 chars
+19-Dec-25 16:07:42 - [ANSWER GENERATION] Completed in 1.81s | TTFT: 0.25s | Tokens: 36 | Rate: 23.1 tokens/s | Response: 644 chars
+19-Dec-25 16:07:42 - [TIMING LOG] Saved to time_logs\timing_log_20251219_160742_675101.json
+19-Dec-25 16:07:42 - [TOTAL TIME] 7.01s
+19-Dec-25 16:07:42 - ================================================================================
+19-Dec-25 16:07:43 - [QUERY] @ProjectileDocument.cs what is Hitmask's data type
+19-Dec-25 16:07:43 - [FILE RESOLUTION] Resolved 1 token(s) to 1 path(s)
+19-Dec-25 16:07:43 -   ProjectileDocument.cs -> c:\users\cpu12391\desktop\gdd_rag_gradio\codebase_rag\tank_online_1-dev\assets\_gamemodules\tankfusionmodule\scripts\data\projectiledocument.cs
+19-Dec-25 16:07:43 - [QUERY] File filters resolved: ['C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\ProjectileDocument.cs']
+19-Dec-25 16:07:43 - [QUERY] Parsed @cs filters: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\data\\projectiledocument.cs']
+19-Dec-25 16:07:43 - [CONTEXT RETRIEVAL] Query: what is Hitmask's data type
+19-Dec-25 16:07:43 - [FILE INDEX] Found 1 table prefix(es) via SQLite index: {'_GameModules'}
+19-Dec-25 16:07:43 - [CONTEXT RETRIEVAL] Using table set with prefix: _GameModules (contains target files)
+19-Dec-25 16:07:43 - [CONTEXT RETRIEVAL] Filtered to 1 table set(s) containing target files
+19-Dec-25 16:07:43 - [CONTEXT RETRIEVAL] Performing direct file lookup for 1 file(s)
+19-Dec-25 16:07:43 - [CONTEXT RETRIEVAL] Direct lookup found 1 class chunks from target files
+19-Dec-25 16:07:43 - [CONTEXT RETRIEVAL] File filters applied: 1 file(s)
+19-Dec-25 16:07:43 - [CONTEXT RETRIEVAL] Allowed paths: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\data\\projectiledocument.cs']...
+19-Dec-25 16:07:43 - [CONTEXT RETRIEVAL] Sample method paths in DB (before filter): ['..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Shot.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\SOMatchData.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Gameplay\\NetTankStats.cs']
+19-Dec-25 16:07:43 - [CONTEXT RETRIEVAL] Method results: 20 -> 0 after file filtering
+19-Dec-25 16:07:43 - [CONTEXT RETRIEVAL] No methods matched filter.
+19-Dec-25 16:07:43 - [CONTEXT RETRIEVAL] Sample normalized DB paths: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\shot.cs', 'c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\data\\somatchdata.cs', 'c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\gameplay\\nettankstats.cs']
+19-Dec-25 16:07:43 - [CONTEXT RETRIEVAL] Allowed normalized paths: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\data\\projectiledocument.cs']
+19-Dec-25 16:07:43 - [CONTEXT RETRIEVAL] Sample class paths in DB (before filter): ['..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\ProjectileDocument.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Gameplay\\SOMatchPlayerData.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankDamageStepVariable.cs']
+19-Dec-25 16:07:43 - [CONTEXT RETRIEVAL] Class results: 20 -> 1 after file filtering
+19-Dec-25 16:07:44 - [HYDE v2 GENERATION] Completed in 0.57s | TTFT: 0.26s | Tokens: 7 | Rate: 22.9 tokens/s
+19-Dec-25 16:07:45 - [CONTEXT RETRIEVAL] Selected method chunks:
+19-Dec-25 16:07:45 - [CONTEXT RETRIEVAL] Selected class chunks:
+19-Dec-25 16:07:45 -   CLASS  | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Data\ProjectileDocument.cs | class=ProjectileDocument
+19-Dec-25 16:07:45 - [CONTEXT RETRIEVAL] Completed in 1.68s | Vector search: 1.11s | Context: 1918 chars
+19-Dec-25 16:07:45 - [ANSWER GENERATION] Completed in 0.43s | TTFT: 0.29s | Tokens: 6 | Rate: 41.2 tokens/s | Response: 33 chars
+19-Dec-25 16:07:45 - [TIMING LOG] Saved to time_logs\timing_log_20251219_160745_495691.json
+19-Dec-25 16:07:45 - [TOTAL TIME] 2.13s
+19-Dec-25 16:07:45 - ================================================================================
+19-Dec-25 16:07:53 - [QUERY] @TankWeaponCollection.cs what are the methods used
+19-Dec-25 16:07:53 - [FILE RESOLUTION] Resolved 1 token(s) to 1 path(s)
+19-Dec-25 16:07:53 -   TankWeaponCollection.cs -> c:\users\cpu12391\desktop\gdd_rag_gradio\codebase_rag\tank_online_1-dev\assets\_gamemodules\tankfusionmodule\scripts\data\tankweaponcollection.cs
+19-Dec-25 16:07:53 - [QUERY] File filters resolved: ['C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankWeaponCollection.cs']
+19-Dec-25 16:07:53 - [QUERY] Parsed @cs filters: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\data\\tankweaponcollection.cs']
+19-Dec-25 16:07:53 - [CONTEXT RETRIEVAL] Query: what are the methods used
+19-Dec-25 16:07:53 - [FILE INDEX] Found 1 table prefix(es) via SQLite index: {'_GameModules'}
+19-Dec-25 16:07:53 - [CONTEXT RETRIEVAL] Using table set with prefix: _GameModules (contains target files)
+19-Dec-25 16:07:53 - [CONTEXT RETRIEVAL] Filtered to 1 table set(s) containing target files
+19-Dec-25 16:07:53 - [CONTEXT RETRIEVAL] Performing direct file lookup for 1 file(s)
+19-Dec-25 16:07:53 - [CONTEXT RETRIEVAL] Direct lookup found 2 method chunks from target files
+19-Dec-25 16:07:53 - [CONTEXT RETRIEVAL] Direct lookup found 1 class chunks from target files
+19-Dec-25 16:07:54 - [CONTEXT RETRIEVAL] File filters applied: 1 file(s)
+19-Dec-25 16:07:54 - [CONTEXT RETRIEVAL] Allowed paths: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\data\\tankweaponcollection.cs']...
+19-Dec-25 16:07:54 - [CONTEXT RETRIEVAL] Sample method paths in DB (before filter): ['..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankWeaponCollection.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankWeaponCollection.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\Editor\\FunctionGrammarChecker.cs']
+19-Dec-25 16:07:54 - [CONTEXT RETRIEVAL] Method results: 22 -> 2 after file filtering
+19-Dec-25 16:07:54 - [CONTEXT RETRIEVAL] Sample class paths in DB (before filter): ['..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankWeaponCollection.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\Editor\\FunctionGrammarChecker.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\Tween.cs']
+19-Dec-25 16:07:54 - [CONTEXT RETRIEVAL] Class results: 21 -> 1 after file filtering
+19-Dec-25 16:07:55 - [HYDE v2 GENERATION] Completed in 1.15s | TTFT: 0.51s | Tokens: 11 | Rate: 17.3 tokens/s
+19-Dec-25 16:07:56 - [CONTEXT RETRIEVAL] Selected method chunks:
+19-Dec-25 16:07:56 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Data\TankWeaponCollection.cs | class=TankWeaponCollection | name=GetDocByType
+19-Dec-25 16:07:56 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Data\TankWeaponCollection.cs | class=TankWeaponCollection | name=GetDocByID
+19-Dec-25 16:07:56 - [CONTEXT RETRIEVAL] Selected class chunks:
+19-Dec-25 16:07:56 -   CLASS  | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Data\TankWeaponCollection.cs | class=TankWeaponCollection
+19-Dec-25 16:07:56 - [CONTEXT RETRIEVAL] Completed in 2.53s | Vector search: 1.37s | Context: 2876 chars
+19-Dec-25 16:07:57 - [ANSWER GENERATION] Completed in 1.32s | TTFT: 0.36s | Tokens: 24 | Rate: 25.0 tokens/s | Response: 361 chars
+19-Dec-25 16:07:57 - [TIMING LOG] Saved to time_logs\timing_log_20251219_160757_507444.json
+19-Dec-25 16:07:57 - [TOTAL TIME] 3.86s
+19-Dec-25 16:07:57 - ================================================================================
+19-Dec-25 16:08:00 - [QUERY] @TankWeaponCollection.cs what is the log warning of both methods
+19-Dec-25 16:08:00 - [FILE RESOLUTION] Resolved 1 token(s) to 1 path(s)
+19-Dec-25 16:08:00 -   TankWeaponCollection.cs -> c:\users\cpu12391\desktop\gdd_rag_gradio\codebase_rag\tank_online_1-dev\assets\_gamemodules\tankfusionmodule\scripts\data\tankweaponcollection.cs
+19-Dec-25 16:08:00 - [QUERY] File filters resolved: ['C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankWeaponCollection.cs']
+19-Dec-25 16:08:00 - [QUERY] Parsed @cs filters: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\data\\tankweaponcollection.cs']
+19-Dec-25 16:08:00 - [CONTEXT RETRIEVAL] Query: what is the log warning of both methods
+19-Dec-25 16:08:00 - [FILE INDEX] Found 1 table prefix(es) via SQLite index: {'_GameModules'}
+19-Dec-25 16:08:00 - [CONTEXT RETRIEVAL] Using table set with prefix: _GameModules (contains target files)
+19-Dec-25 16:08:00 - [CONTEXT RETRIEVAL] Filtered to 1 table set(s) containing target files
+19-Dec-25 16:08:00 - [CONTEXT RETRIEVAL] Performing direct file lookup for 1 file(s)
+19-Dec-25 16:08:00 - [CONTEXT RETRIEVAL] Direct lookup found 2 method chunks from target files
+19-Dec-25 16:08:00 - [CONTEXT RETRIEVAL] Direct lookup found 1 class chunks from target files
+19-Dec-25 16:08:00 - [CONTEXT RETRIEVAL] File filters applied: 1 file(s)
+19-Dec-25 16:08:00 - [CONTEXT RETRIEVAL] Allowed paths: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\data\\tankweaponcollection.cs']...
+19-Dec-25 16:08:00 - [CONTEXT RETRIEVAL] Sample method paths in DB (before filter): ['..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankWeaponCollection.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankWeaponCollection.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\FirestoreDebugHelper.cs']
+19-Dec-25 16:08:00 - [CONTEXT RETRIEVAL] Method results: 22 -> 2 after file filtering
+19-Dec-25 16:08:00 - [CONTEXT RETRIEVAL] Sample class paths in DB (before filter): ['..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankWeaponCollection.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\FirestoreDebugHelper.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\Editor\\FunctionGrammarChecker.cs']
+19-Dec-25 16:08:00 - [CONTEXT RETRIEVAL] Class results: 20 -> 1 after file filtering
+19-Dec-25 16:08:01 - [HYDE v2 GENERATION] Completed in 0.78s | TTFT: 0.27s | Tokens: 9 | Rate: 17.6 tokens/s
+19-Dec-25 16:08:01 - [CONTEXT RETRIEVAL] Selected method chunks:
+19-Dec-25 16:08:01 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Data\TankWeaponCollection.cs | class=TankWeaponCollection | name=GetDocByType
+19-Dec-25 16:08:01 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Data\TankWeaponCollection.cs | class=TankWeaponCollection | name=GetDocByID
+19-Dec-25 16:08:01 - [CONTEXT RETRIEVAL] Selected class chunks:
+19-Dec-25 16:08:01 -   CLASS  | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Data\TankWeaponCollection.cs | class=TankWeaponCollection
+19-Dec-25 16:08:01 - [CONTEXT RETRIEVAL] Completed in 1.66s | Vector search: 0.86s | Context: 2876 chars
+19-Dec-25 16:08:02 - [ANSWER GENERATION] Completed in 1.06s | TTFT: 0.25s | Tokens: 22 | Rate: 27.3 tokens/s | Response: 272 chars
+19-Dec-25 16:08:02 - [TIMING LOG] Saved to time_logs\timing_log_20251219_160802_756647.json
+19-Dec-25 16:08:02 - [TOTAL TIME] 2.72s
+19-Dec-25 16:08:02 - ================================================================================
+19-Dec-25 16:08:04 - [QUERY] @MuzzleFlash.cs what does OnFire() do
+19-Dec-25 16:08:04 - [FILE RESOLUTION] Resolved 1 token(s) to 1 path(s)
+19-Dec-25 16:08:04 -   MuzzleFlash.cs -> c:\users\cpu12391\desktop\gdd_rag_gradio\codebase_rag\tank_online_1-dev\assets\_gamemodules\tankfusionmodule\scripts\effects\muzzleflash.cs
+19-Dec-25 16:08:04 - [QUERY] File filters resolved: ['C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Effects\\MuzzleFlash.cs']
+19-Dec-25 16:08:04 - [QUERY] Parsed @cs filters: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\effects\\muzzleflash.cs']
+19-Dec-25 16:08:04 - [CONTEXT RETRIEVAL] Query: what does OnFire() do
+19-Dec-25 16:08:04 - [FILE INDEX] Found 1 table prefix(es) via SQLite index: {'_GameModules'}
+19-Dec-25 16:08:04 - [CONTEXT RETRIEVAL] Using table set with prefix: _GameModules (contains target files)
+19-Dec-25 16:08:04 - [CONTEXT RETRIEVAL] Filtered to 1 table set(s) containing target files
+19-Dec-25 16:08:04 - [CONTEXT RETRIEVAL] Performing direct file lookup for 1 file(s)
+19-Dec-25 16:08:05 - [CONTEXT RETRIEVAL] Direct lookup found 1 method chunks from target files
+19-Dec-25 16:08:05 - [CONTEXT RETRIEVAL] Direct lookup found 1 class chunks from target files
+19-Dec-25 16:08:05 - [CONTEXT RETRIEVAL] File filters applied: 1 file(s)
+19-Dec-25 16:08:05 - [CONTEXT RETRIEVAL] Allowed paths: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\effects\\muzzleflash.cs']...
+19-Dec-25 16:08:05 - [CONTEXT RETRIEVAL] Sample method paths in DB (before filter): ['..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Effects\\MuzzleFlash.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Turret.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityFireDash.cs']
+19-Dec-25 16:08:05 - [CONTEXT RETRIEVAL] Method results: 20 -> 1 after file filtering
+19-Dec-25 16:08:05 - [CONTEXT RETRIEVAL] Sample class paths in DB (before filter): ['..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Effects\\MuzzleFlash.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Effects\\MuzzleFlashGigavolt.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityFireDash.cs']
+19-Dec-25 16:08:05 - [CONTEXT RETRIEVAL] Class results: 20 -> 1 after file filtering
+19-Dec-25 16:08:05 - [HYDE v2 GENERATION] Completed in 0.53s | TTFT: 0.25s | Tokens: 7 | Rate: 25.3 tokens/s
+19-Dec-25 16:08:06 - [CONTEXT RETRIEVAL] Selected method chunks:
+19-Dec-25 16:08:06 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Effects\MuzzleFlash.cs | class=MuzzleFlash | name=OnFire
+19-Dec-25 16:08:06 - [CONTEXT RETRIEVAL] Selected class chunks:
+19-Dec-25 16:08:06 -   CLASS  | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Effects\MuzzleFlash.cs | class=MuzzleFlash
+19-Dec-25 16:08:06 - [CONTEXT RETRIEVAL] Completed in 1.26s | Vector search: 0.73s | Context: 865 chars
+19-Dec-25 16:08:07 - [ANSWER GENERATION] Completed in 0.80s | TTFT: 0.32s | Tokens: 13 | Rate: 27.0 tokens/s | Response: 159 chars
+19-Dec-25 16:08:07 - [TIMING LOG] Saved to time_logs\timing_log_20251219_160807_022768.json
+19-Dec-25 16:08:07 - [TOTAL TIME] 2.07s
+19-Dec-25 16:08:07 - ================================================================================
+19-Dec-25 16:08:09 - [QUERY] @TextureDownloader.cs what are the methods
+19-Dec-25 16:08:09 - [FILE RESOLUTION] Resolved 1 token(s) to 1 path(s)
+19-Dec-25 16:08:09 -   TextureDownloader.cs -> c:\users\cpu12391\desktop\gdd_rag_gradio\codebase_rag\tank_online_1-dev\assets\_gamemodules\tankfusionmodule\scripts\helpers\texturedownloader.cs
+19-Dec-25 16:08:09 - [QUERY] File filters resolved: ['C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Helpers\\TextureDownloader.cs']
+19-Dec-25 16:08:09 - [QUERY] Parsed @cs filters: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\helpers\\texturedownloader.cs']
+19-Dec-25 16:08:09 - [CONTEXT RETRIEVAL] Query: what are the methods
+19-Dec-25 16:08:09 - [FILE INDEX] Found 1 table prefix(es) via SQLite index: {'_GameModules'}
+19-Dec-25 16:08:09 - [CONTEXT RETRIEVAL] Using table set with prefix: _GameModules (contains target files)
+19-Dec-25 16:08:09 - [CONTEXT RETRIEVAL] Filtered to 1 table set(s) containing target files
+19-Dec-25 16:08:09 - [CONTEXT RETRIEVAL] Performing direct file lookup for 1 file(s)
+19-Dec-25 16:08:09 - [CONTEXT RETRIEVAL] Direct lookup found 7 method chunks from target files
+19-Dec-25 16:08:09 - [CONTEXT RETRIEVAL] Direct lookup found 1 class chunks from target files
+19-Dec-25 16:08:09 - [CONTEXT RETRIEVAL] File filters applied: 1 file(s)
+19-Dec-25 16:08:09 - [CONTEXT RETRIEVAL] Allowed paths: ['c:\\users\\cpu12391\\desktop\\gdd_rag_gradio\\codebase_rag\\tank_online_1-dev\\assets\\_gamemodules\\tankfusionmodule\\scripts\\helpers\\texturedownloader.cs']...
+19-Dec-25 16:08:09 - [CONTEXT RETRIEVAL] Sample method paths in DB (before filter): ['..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Helpers\\TextureDownloader.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Helpers\\TextureDownloader.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Helpers\\TextureDownloader.cs']
+19-Dec-25 16:08:09 - [CONTEXT RETRIEVAL] Method results: 27 -> 7 after file filtering
+19-Dec-25 16:08:09 - [CONTEXT RETRIEVAL] Sample class paths in DB (before filter): ['..\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Helpers\\TextureDownloader.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\Editor\\FunctionGrammarChecker.cs', '..\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\Tween.cs']
+19-Dec-25 16:08:09 - [CONTEXT RETRIEVAL] Class results: 21 -> 1 after file filtering
+19-Dec-25 16:08:10 - [HYDE v2 GENERATION] Completed in 1.03s | TTFT: 0.28s | Tokens: 9 | Rate: 11.9 tokens/s
+19-Dec-25 16:08:11 - [CONTEXT RETRIEVAL] Selected method chunks:
+19-Dec-25 16:08:11 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Helpers\TextureDownloader.cs | class=TextureDownloader | name=PredownloadResource
+19-Dec-25 16:08:11 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Helpers\TextureDownloader.cs | class=TextureDownloader | name=LoadImage
+19-Dec-25 16:08:11 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Helpers\TextureDownloader.cs | class=TextureDownloader | name=DownloadImageCoroutine
+19-Dec-25 16:08:11 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Helpers\TextureDownloader.cs | class=TextureDownloader | name=OnCollectionUpdatedHandler
+19-Dec-25 16:08:11 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Helpers\TextureDownloader.cs | class=TextureDownloader | name=DownloadImage
+19-Dec-25 16:08:11 -   METHOD | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Helpers\TextureDownloader.cs | class=TextureDownloader | name=GetFileNameFromURL
+19-Dec-25 16:08:11 - [CONTEXT RETRIEVAL] Selected class chunks:
+19-Dec-25 16:08:11 -   CLASS  | file=..\tank_online_1-dev\Assets\_GameModules\TankFusionModule\Scripts\Helpers\TextureDownloader.cs | class=TextureDownloader
+19-Dec-25 16:08:11 - [CONTEXT RETRIEVAL] Completed in 1.67s | Vector search: 0.64s | Context: 16594 chars
+19-Dec-25 16:08:13 - [ANSWER GENERATION] Completed in 1.82s | TTFT: 0.30s | Tokens: 33 | Rate: 21.6 tokens/s | Response: 525 chars
+19-Dec-25 16:08:13 - [TIMING LOG] Saved to time_logs\timing_log_20251219_160813_059094.json
+19-Dec-25 16:08:13 - [TOTAL TIME] 3.55s
+19-Dec-25 16:08:13 - ================================================================================
