@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-12-19T10:14:35.163413",
+  "user_id": "122813ac-4540-4baf-9852-7b01082bd341",
+  "query": "@GameManager.cs summarise this ",
+  "cleaned_query": "summarise this",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GamePlay\\Scripts\\GameManager.cs"
+  ],
+  "context_retrieval": {
+    "query": "summarise this",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.28,
+      "ttft": 0.38,
+      "token_count": 17,
+      "token_rate": 18.8,
+      "response_length": 269
+    },
+    "vector_search_time": 1.21,
+    "total_time": 2.53,
+    "context_length": 17621,
+    "results_count": {
+      "methods": 10,
+      "classes": 2
+    }
+  },
+  "context_truncated": {
+    "original_length": 17621,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 4.93,
+    "ttft": 0.39,
+    "token_count": 83,
+    "token_rate": 18.3,
+    "response_length": 1623
+  },
+  "total_time": 7.52
+}

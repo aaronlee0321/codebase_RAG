@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T13:44:50.564508",
+  "user_id": "ead94607-70f3-432a-ae08-b3cf7ffd8cd1",
+  "query": "@codebase What global constants are defined in the Constants class and where are they used?",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "What global constants are defined in the Constants class and where are they used?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.93,
+      "ttft": 0.43,
+      "token_count": 11,
+      "token_rate": 21.9,
+      "response_length": 148
+    },
+    "vector_search_time": 0.75,
+    "total_time": 1.67,
+    "context_length": 14158,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 14158,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 1.69,
+    "ttft": 0.29,
+    "token_count": 31,
+    "token_rate": 22.2,
+    "response_length": 525
+  },
+  "total_time": 3.41
+}

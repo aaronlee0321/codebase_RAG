@@ -1,0 +1,11 @@
+{
+  "total_queries": 6,
+  "average_times": {
+    "total_time": 21.6,
+    "context_retrieval": 12.45,
+    "hyde_generation": 4.77,
+    "hyde_v2_generation": 6.41,
+    "vector_search": 1.26,
+    "answer_generation": 9.1
+  }
+}

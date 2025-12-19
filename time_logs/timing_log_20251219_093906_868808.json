@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T09:39:03.963177",
+  "user_id": "ea264c08-7769-4e42-a595-18ac23764ac0",
+  "query": "@SceneIDs.cs summarise this ",
+  "cleaned_query": "@SceneIDs.cs summarise this ",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GamePlay\\Scripts\\SceneIDs.cs"
+  ],
+  "context_retrieval": {
+    "query": "@SceneIDs.cs summarise this",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.77,
+      "ttft": 0.3,
+      "token_count": 11,
+      "token_rate": 23.3,
+      "response_length": 125
+    },
+    "vector_search_time": 0.68,
+    "total_time": 1.45,
+    "context_length": 512,
+    "results_count": {
+      "methods": 0,
+      "classes": 1
+    }
+  },
+  "answer_generation": {
+    "total_time": 1.45,
+    "ttft": 0.27,
+    "token_count": 27,
+    "token_rate": 22.9,
+    "response_length": 428
+  },
+  "total_time": 2.91
+}

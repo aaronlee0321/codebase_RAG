@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T13:19:06.551563",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@AudioEmitter.cs first variable",
+  "cleaned_query": "first variable",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\AudioModule\\Scripts\\AudioEmitter.cs"
+  ],
+  "context_retrieval": {
+    "query": "first variable",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.31,
+      "ttft": 0.25,
+      "token_count": 2,
+      "token_rate": 31.1,
+      "response_length": 14
+    },
+    "vector_search_time": 0.75,
+    "total_time": 1.06,
+    "context_length": 46,
+    "results_count": {
+      "methods": 0,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.46,
+    "ttft": 0.24,
+    "token_count": 6,
+    "token_rate": 27.7,
+    "response_length": 51
+  },
+  "total_time": 1.52
+}

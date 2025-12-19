@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-12-19T13:03:04.254819",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@DatabaseManager.cs @GameDatabase.cs how do these files communicate",
+  "cleaned_query": "@GameDatabase.cs how do these files communicate",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameData\\Scripts\\DatabaseManager.cs",
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameData\\Scripts\\GameDatabase.cs"
+  ],
+  "context_retrieval": {
+    "query": "@GameDatabase.cs how do these files communicate",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.39,
+      "ttft": 0.43,
+      "token_count": 10,
+      "token_rate": 10.5,
+      "response_length": 159
+    },
+    "vector_search_time": 0.87,
+    "total_time": 2.26,
+    "context_length": 14804,
+    "results_count": {
+      "methods": 10,
+      "classes": 2
+    }
+  },
+  "context_truncated": {
+    "original_length": 14804,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 4.8,
+    "ttft": 0.33,
+    "token_count": 75,
+    "token_rate": 16.8,
+    "response_length": 1309
+  },
+  "total_time": 7.11
+}

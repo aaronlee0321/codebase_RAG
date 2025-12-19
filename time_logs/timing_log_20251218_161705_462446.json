@@ -1,0 +1,32 @@
+{
+  "timestamp": "2025-12-18T16:17:02.934691",
+  "user_id": "61467d6a-905c-44d0-a7d1-fcc65c43c922",
+  "query": "@codebase what does the start() method in Obstacle do",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "what does the start() method in Obstacle do",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.87,
+      "ttft": 0.27,
+      "token_count": 9,
+      "token_rate": 15.0,
+      "response_length": 150
+    },
+    "vector_search_time": 0.76,
+    "total_time": 1.62,
+    "context_length": 819,
+    "results_count": {
+      "methods": 5,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.91,
+    "ttft": 0.31,
+    "token_count": 11,
+    "token_rate": 18.5,
+    "response_length": 136
+  },
+  "total_time": 2.53
+}

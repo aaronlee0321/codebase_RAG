@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T09:20:33.581469",
+  "user_id": "3840e5e3-edca-4e1a-a620-d421911524e6",
+  "query": "@DebugLogManager.cs summarise this",
+  "cleaned_query": "@DebugLogManager.cs summarise this",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\Plugins\\IngameDebugConsole\\Scripts\\DebugLogManager.cs"
+  ],
+  "context_retrieval": {
+    "query": "@DebugLogManager.cs summarise this",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.49,
+      "ttft": 0.3,
+      "token_count": 5,
+      "token_rate": 26.6,
+      "response_length": 55
+    },
+    "vector_search_time": 1.14,
+    "total_time": 1.63,
+    "context_length": 46,
+    "results_count": {
+      "methods": 0,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.43,
+    "ttft": 0.27,
+    "token_count": 6,
+    "token_rate": 35.7,
+    "response_length": 51
+  },
+  "total_time": 2.07
+}

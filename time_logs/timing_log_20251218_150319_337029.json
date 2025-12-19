@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T15:03:12.972080",
+  "user_id": "eec500dc-6393-4e61-bc9a-250f4d88d6ab",
+  "query": "@codebase Which configuration controls device quality settings, and where is it initialized?",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "Which configuration controls device quality settings, and where is it initialized?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.94,
+      "ttft": 0.45,
+      "token_count": 9,
+      "token_rate": 18.5,
+      "response_length": 192
+    },
+    "vector_search_time": 0.74,
+    "total_time": 1.68,
+    "context_length": 18089,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 18089,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 4.64,
+    "ttft": 0.45,
+    "token_count": 69,
+    "token_rate": 16.5,
+    "response_length": 1228
+  },
+  "total_time": 6.36
+}

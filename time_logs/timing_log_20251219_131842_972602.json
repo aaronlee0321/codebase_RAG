@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T13:18:41.409377",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@AssetContainer.cs first variable",
+  "cleaned_query": "first variable",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\AssetContainer.cs"
+  ],
+  "context_retrieval": {
+    "query": "first variable",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.35,
+      "ttft": 0.28,
+      "token_count": 2,
+      "token_rate": 28.0,
+      "response_length": 13
+    },
+    "vector_search_time": 0.75,
+    "total_time": 1.11,
+    "context_length": 46,
+    "results_count": {
+      "methods": 0,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.44,
+    "ttft": 0.21,
+    "token_count": 7,
+    "token_rate": 30.2,
+    "response_length": 70
+  },
+  "total_time": 1.56
+}

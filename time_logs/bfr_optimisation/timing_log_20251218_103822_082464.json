@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-12-18T10:37:39.038237",
+  "user_id": "d766551b-cbc7-480f-8a92-d8e18b9f2b37",
+  "query": "@codebase summarize GameManager",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "summarize GameManager",
+    "rerank_enabled": false,
+    "hyde_generation": {
+      "total_time": 6.33,
+      "ttft": 1.01,
+      "token_count": 58,
+      "token_rate": 10.9,
+      "response_length": 1029
+    },
+    "hyde_v2_generation": {
+      "total_time": 8.39,
+      "ttft": 3.94,
+      "token_count": 48,
+      "token_rate": 10.8,
+      "response_length": 887
+    },
+    "vector_search_time": 1.93,
+    "total_time": 16.64,
+    "context_length": 29261,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 29261,
+    "truncated_length": 12000
+  },
+  "answer_generation": {
+    "total_time": 26.35,
+    "ttft": 0.61,
+    "token_count": 288,
+    "token_rate": 11.2,
+    "response_length": 5375
+  },
+  "total_time": 43.05
+}

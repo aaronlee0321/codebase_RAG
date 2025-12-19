@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T15:40:55.708680",
+  "user_id": "f1558624-66fc-4bd7-947c-76004c6ccccb",
+  "query": "@codebase Which class is responsible for managing overall game state transitions, and how is the state machine instantiated?",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "Which class is responsible for managing overall game state transitions, and how is the state machine instantiated?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.8,
+      "ttft": 0.25,
+      "token_count": 10,
+      "token_rate": 17.9,
+      "response_length": 185
+    },
+    "vector_search_time": 0.73,
+    "total_time": 1.53,
+    "context_length": 28653,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 28653,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 2.02,
+    "ttft": 0.43,
+    "token_count": 22,
+    "token_rate": 13.8,
+    "response_length": 420
+  },
+  "total_time": 3.59
+}

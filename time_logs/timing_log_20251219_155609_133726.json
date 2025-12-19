@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T15:56:05.102195",
+  "user_id": "a5192cb2-3a08-4c34-a0f6-bbda7db9965a",
+  "query": "@ProjectileDocument.cs what is ProjectileType logic",
+  "cleaned_query": "what is ProjectileType logic",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\ProjectileDocument.cs"
+  ],
+  "context_retrieval": {
+    "query": "what is ProjectileType logic",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.0,
+      "ttft": 0.31,
+      "token_count": 11,
+      "token_rate": 16.0,
+      "response_length": 164
+    },
+    "vector_search_time": 0.83,
+    "total_time": 1.84,
+    "context_length": 1918,
+    "results_count": {
+      "methods": 0,
+      "classes": 1
+    }
+  },
+  "answer_generation": {
+    "total_time": 2.19,
+    "ttft": 0.25,
+    "token_count": 43,
+    "token_rate": 22.1,
+    "response_length": 749
+  },
+  "total_time": 4.04
+}

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-12-19T11:14:20.561387",
+  "user_id": "6fc1e69c-299c-40bf-aa80-c9cd39ae1ea1",
+  "query": "@DatabaseManager.cs help me write the unit test for GetRuntimeDocument",
+  "cleaned_query": "help me write the unit test for GetRuntimeDocument",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameData\\Scripts\\DatabaseManager.cs"
+  ],
+  "context_retrieval": {
+    "query": "help me write the unit test for GetRuntimeDocument",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.6,
+      "ttft": 0.38,
+      "token_count": 6,
+      "token_rate": 27.1,
+      "response_length": 73
+    },
+    "vector_search_time": 0.92,
+    "total_time": 1.53,
+    "context_length": 10397,
+    "results_count": {
+      "methods": 6,
+      "classes": 1
+    }
+  },
+  "context_truncated": {
+    "original_length": 10397,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 3.29,
+    "ttft": 0.31,
+    "token_count": 61,
+    "token_rate": 20.5,
+    "response_length": 1124
+  },
+  "total_time": 4.87
+}

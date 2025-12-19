@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T15:28:57.517890",
+  "user_id": "0347f471-cce7-4cba-8f74-c220a8573815",
+  "query": "@codebase Where is the mapping between GamePhase values and concrete game state classes defined?",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "Where is the mapping between GamePhase values and concrete game state classes defined?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.62,
+      "ttft": 0.39,
+      "token_count": 22,
+      "token_rate": 17.8,
+      "response_length": 411
+    },
+    "vector_search_time": 0.56,
+    "total_time": 2.18,
+    "context_length": 28653,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 28653,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 2.28,
+    "ttft": 0.3,
+    "token_count": 39,
+    "token_rate": 19.7,
+    "response_length": 692
+  },
+  "total_time": 4.52
+}

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-12-19T10:53:13.876560",
+  "user_id": "f1dea1e3-1aca-487a-9c29-040390fb53bc",
+  "query": "@GameManager.cs  How does the GameManager prevent duplicate or redundant game state transitions?",
+  "cleaned_query": "How does the GameManager prevent duplicate or redundant game state transitions?",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GamePlay\\Scripts\\GameManager.cs"
+  ],
+  "context_retrieval": {
+    "query": "How does the GameManager prevent duplicate or redundant game state transitions?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.7,
+      "ttft": 0.37,
+      "token_count": 8,
+      "token_rate": 24.9,
+      "response_length": 154
+    },
+    "vector_search_time": 1.69,
+    "total_time": 2.39,
+    "context_length": 28185,
+    "results_count": {
+      "methods": 9,
+      "classes": 2
+    }
+  },
+  "context_truncated": {
+    "original_length": 28185,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 2.6,
+    "ttft": 0.33,
+    "token_count": 44,
+    "token_rate": 19.4,
+    "response_length": 821
+  },
+  "total_time": 5.03
+}

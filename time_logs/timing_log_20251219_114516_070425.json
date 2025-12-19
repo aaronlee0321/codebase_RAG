@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-12-19T11:45:12.801302",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@DeviceQualityManager.cs in SetManualQualityLevel() how many cases are in this function",
+  "cleaned_query": "in SetManualQualityLevel() how many cases are in this function",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GamePlayModule\\Scripts\\DeviceQualityManager.cs"
+  ],
+  "context_retrieval": {
+    "query": "in SetManualQualityLevel() how many cases are in this function",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.81,
+      "ttft": 0.43,
+      "token_count": 8,
+      "token_rate": 21.4,
+      "response_length": 103
+    },
+    "vector_search_time": 0.72,
+    "total_time": 1.53,
+    "context_length": 21639,
+    "results_count": {
+      "methods": 8,
+      "classes": 1
+    }
+  },
+  "context_truncated": {
+    "original_length": 21639,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 1.69,
+    "ttft": 0.38,
+    "token_count": 27,
+    "token_rate": 20.6,
+    "response_length": 343
+  },
+  "total_time": 3.27
+}

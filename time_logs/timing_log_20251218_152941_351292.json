@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T15:29:38.185409",
+  "user_id": "26fe1a18-51a1-4702-b11a-61492a4bf423",
+  "query": "@codebase Which event system is used to trigger game state changes, and where is the registration performed?",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "Which event system is used to trigger game state changes, and where is the registration performed?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.83,
+      "ttft": 0.39,
+      "token_count": 8,
+      "token_rate": 18.2,
+      "response_length": 157
+    },
+    "vector_search_time": 0.52,
+    "total_time": 1.35,
+    "context_length": 28653,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 28653,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 1.76,
+    "ttft": 0.34,
+    "token_count": 29,
+    "token_rate": 20.4,
+    "response_length": 504
+  },
+  "total_time": 3.17
+}

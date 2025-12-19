@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-12-19T10:04:19.865532",
+  "user_id": "199e99df-a6fa-454e-bbe7-5746a73d8bf6",
+  "query": "@GameManager.cs what are the methods used ?",
+  "cleaned_query": "what are the methods used ?",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GamePlay\\Scripts\\GameManager.cs"
+  ],
+  "context_retrieval": {
+    "query": "what are the methods used ?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.92,
+      "ttft": 0.37,
+      "token_count": 9,
+      "token_rate": 16.5,
+      "response_length": 152
+    },
+    "vector_search_time": 0.96,
+    "total_time": 1.89,
+    "context_length": 17884,
+    "results_count": {
+      "methods": 10,
+      "classes": 2
+    }
+  },
+  "context_truncated": {
+    "original_length": 17884,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 3.41,
+    "ttft": 0.4,
+    "token_count": 58,
+    "token_rate": 19.2,
+    "response_length": 1074
+  },
+  "total_time": 5.37
+}

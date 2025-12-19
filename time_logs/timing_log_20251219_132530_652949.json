@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T13:25:27.886891",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@BounceUI.cs summarise this file",
+  "cleaned_query": "summarise this file",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\UI\\BounceUI.cs"
+  ],
+  "context_retrieval": {
+    "query": "summarise this file",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.56,
+      "ttft": 0.26,
+      "token_count": 16,
+      "token_rate": 12.3,
+      "response_length": 228
+    },
+    "vector_search_time": 0.77,
+    "total_time": 2.34,
+    "context_length": 46,
+    "results_count": {
+      "methods": 0,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.43,
+    "ttft": 0.24,
+    "token_count": 6,
+    "token_rate": 32.0,
+    "response_length": 51
+  },
+  "total_time": 2.77
+}

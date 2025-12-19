@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T17:11:19.639583",
+  "user_id": "85aac054-8ae4-4265-8d45-880d72bc6db0",
+  "query": "@DigitalGlitch.cs summarise this ",
+  "cleaned_query": "@DigitalGlitch.cs summarise this ",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\GameAssets\\Shaders\\Kino\\Glitch\\DigitalGlitch.cs"
+  ],
+  "context_retrieval": {
+    "query": "@DigitalGlitch.cs summarise this",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.83,
+      "ttft": 0.32,
+      "token_count": 10,
+      "token_rate": 19.6,
+      "response_length": 174
+    },
+    "vector_search_time": 5.25,
+    "total_time": 6.08,
+    "context_length": 1870,
+    "results_count": {
+      "methods": 4,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 4.28,
+    "ttft": 0.33,
+    "token_count": 87,
+    "token_rate": 22.0,
+    "response_length": 1542
+  },
+  "total_time": 10.37
+}

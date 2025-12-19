@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T15:29:16.902771",
+  "user_id": "34acb8a4-0d4f-4b0e-a3d0-9666374a7315",
+  "query": "@codebase Where in the code is the current active scene retrieved, and for what purpose?",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "Where in the code is the current active scene retrieved, and for what purpose?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.85,
+      "ttft": 0.4,
+      "token_count": 9,
+      "token_rate": 19.9,
+      "response_length": 154
+    },
+    "vector_search_time": 0.71,
+    "total_time": 1.56,
+    "context_length": 18708,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 18708,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 1.97,
+    "ttft": 0.39,
+    "token_count": 30,
+    "token_rate": 19.0,
+    "response_length": 512
+  },
+  "total_time": 3.57
+}

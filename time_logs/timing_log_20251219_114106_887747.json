@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T11:41:04.955609",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@DeviceQualityManager.cs what are the global variables defined ",
+  "cleaned_query": "what are the global variables defined",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GamePlayModule\\Scripts\\DeviceQualityManager.cs"
+  ],
+  "context_retrieval": {
+    "query": "what are the global variables defined",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.67,
+      "ttft": 0.28,
+      "token_count": 5,
+      "token_rate": 12.8,
+      "response_length": 61
+    },
+    "vector_search_time": 0.83,
+    "total_time": 1.51,
+    "context_length": 46,
+    "results_count": {
+      "methods": 0,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.42,
+    "ttft": 0.24,
+    "token_count": 6,
+    "token_rate": 32.2,
+    "response_length": 51
+  },
+  "total_time": 1.93
+}

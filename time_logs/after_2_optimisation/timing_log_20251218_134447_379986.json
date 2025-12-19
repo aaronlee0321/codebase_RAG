@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T13:44:36.214300",
+  "user_id": "ead94607-70f3-432a-ae08-b3cf7ffd8cd1",
+  "query": "@codebase summarize GameManager",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "summarize GameManager",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.97,
+      "ttft": 0.39,
+      "token_count": 20,
+      "token_rate": 12.7,
+      "response_length": 429
+    },
+    "vector_search_time": 2.54,
+    "total_time": 4.51,
+    "context_length": 29454,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 29454,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 6.59,
+    "ttft": 0.37,
+    "token_count": 123,
+    "token_rate": 19.8,
+    "response_length": 2203
+  },
+  "total_time": 11.17
+}

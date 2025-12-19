@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T13:45:17.045754",
+  "user_id": "ead94607-70f3-432a-ae08-b3cf7ffd8cd1",
+  "query": "@codebase If I want to add a new scene called Settings, what changes do I need to make to SceneIDs and SceneLoader?",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "If I want to add a new scene called Settings, what changes do I need to make to SceneIDs and SceneLoader?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.46,
+      "ttft": 0.45,
+      "token_count": 15,
+      "token_rate": 14.7,
+      "response_length": 298
+    },
+    "vector_search_time": 0.7,
+    "total_time": 2.16,
+    "context_length": 24935,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 24935,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 7.08,
+    "ttft": 0.36,
+    "token_count": 141,
+    "token_rate": 21.0,
+    "response_length": 2184
+  },
+  "total_time": 9.29
+}

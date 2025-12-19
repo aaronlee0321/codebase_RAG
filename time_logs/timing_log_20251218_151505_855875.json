@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-12-18T15:15:01.393213",
+  "user_id": "379b4bd8-3def-410b-942d-3533e1d5cf39",
+  "query": "are you sure it is not SceneLoader.LoadScene(string)",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "source": "redis_cache",
+    "context_length": 23014
+  },
+  "context_truncated": {
+    "original_length": 23014,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 4.46,
+    "ttft": 0.28,
+    "token_count": 56,
+    "token_rate": 13.4,
+    "response_length": 920
+  },
+  "total_time": 4.46
+}

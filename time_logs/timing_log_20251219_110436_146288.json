@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T11:04:32.757167",
+  "user_id": "7a999826-93cf-4623-a508-e3f11deaa9f7",
+  "query": "@ECEffectActor.cs what does RandomizeRotation()return ",
+  "cleaned_query": "what does RandomizeRotation()return",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\packs\\WebDemoAssets\\scripts\\ECEffectActor.cs"
+  ],
+  "context_retrieval": {
+    "query": "what does RandomizeRotation()return",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.59,
+      "ttft": 0.37,
+      "token_count": 6,
+      "token_rate": 26.3,
+      "response_length": 56
+    },
+    "vector_search_time": 1.21,
+    "total_time": 1.84,
+    "context_length": 5642,
+    "results_count": {
+      "methods": 3,
+      "classes": 1
+    }
+  },
+  "answer_generation": {
+    "total_time": 1.53,
+    "ttft": 0.33,
+    "token_count": 24,
+    "token_rate": 20.0,
+    "response_length": 403
+  },
+  "total_time": 3.39
+}

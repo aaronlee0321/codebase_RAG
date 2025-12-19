@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T13:23:27.182264",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@AutoReleasedFx.cs first variable defined",
+  "cleaned_query": "first variable defined",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Effects\\AutoReleasedFx.cs"
+  ],
+  "context_retrieval": {
+    "query": "first variable defined",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.44,
+      "ttft": 0.3,
+      "token_count": 5,
+      "token_rate": 37.0,
+      "response_length": 46
+    },
+    "vector_search_time": 1.67,
+    "total_time": 2.12,
+    "context_length": 680,
+    "results_count": {
+      "methods": 0,
+      "classes": 1
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.65,
+    "ttft": 0.3,
+    "token_count": 10,
+    "token_rate": 28.9,
+    "response_length": 99
+  },
+  "total_time": 2.77
+}

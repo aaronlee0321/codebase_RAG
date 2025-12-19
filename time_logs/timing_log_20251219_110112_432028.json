@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T11:01:08.802622",
+  "user_id": "7a999826-93cf-4623-a508-e3f11deaa9f7",
+  "query": "@ECparticleColorChangerMaster.cs how many for loops are om Update()",
+  "cleaned_query": "how many for loops are om Update()",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\scripts\\ECparticleColorChangerMaster.cs"
+  ],
+  "context_retrieval": {
+    "query": "how many for loops are om Update()",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.74,
+      "ttft": 0.36,
+      "token_count": 8,
+      "token_rate": 20.9,
+      "response_length": 119
+    },
+    "vector_search_time": 1.29,
+    "total_time": 2.05,
+    "context_length": 3186,
+    "results_count": {
+      "methods": 1,
+      "classes": 2
+    }
+  },
+  "answer_generation": {
+    "total_time": 1.54,
+    "ttft": 0.35,
+    "token_count": 25,
+    "token_rate": 21.1,
+    "response_length": 279
+  },
+  "total_time": 3.64
+}

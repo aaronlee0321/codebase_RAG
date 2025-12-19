@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T17:12:51.193335",
+  "user_id": "85aac054-8ae4-4265-8d45-880d72bc6db0",
+  "query": "@Hitbox.cs List out all the varibales used ",
+  "cleaned_query": "@Hitbox.cs List out all the varibales used ",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalPackages\\Ilumisoft\\Health System\\Scripts\\Hitbox.cs"
+  ],
+  "context_retrieval": {
+    "query": "@Hitbox.cs List out all the varibales used",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.63,
+      "ttft": 0.32,
+      "token_count": 7,
+      "token_rate": 23.1,
+      "response_length": 87
+    },
+    "vector_search_time": 0.72,
+    "total_time": 1.35,
+    "context_length": 46,
+    "results_count": {
+      "methods": 0,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.5,
+    "ttft": 0.26,
+    "token_count": 6,
+    "token_rate": 25.4,
+    "response_length": 51
+  },
+  "total_time": 1.86
+}

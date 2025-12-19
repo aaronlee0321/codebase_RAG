@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T15:47:45.205024",
+  "user_id": "e401a7d1-68c6-47ea-9d3b-fe19db9dae0e",
+  "query": "@AbilityFireDash.cs what are the global variables ",
+  "cleaned_query": "what are the global variables",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityFireDash.cs"
+  ],
+  "context_retrieval": {
+    "query": "what are the global variables",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.73,
+      "ttft": 0.28,
+      "token_count": 7,
+      "token_rate": 15.5,
+      "response_length": 107
+    },
+    "vector_search_time": 1.38,
+    "total_time": 2.14,
+    "context_length": 46,
+    "results_count": {
+      "methods": 0,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.49,
+    "ttft": 0.29,
+    "token_count": 6,
+    "token_rate": 30.5,
+    "response_length": 51
+  },
+  "total_time": 2.66
+}

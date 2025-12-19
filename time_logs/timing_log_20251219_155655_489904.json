@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T15:56:52.054710",
+  "user_id": "a5192cb2-3a08-4c34-a0f6-bbda7db9965a",
+  "query": "@TankWeaponCollection.cs what are the methods used",
+  "cleaned_query": "what are the methods used",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankWeaponCollection.cs"
+  ],
+  "context_retrieval": {
+    "query": "what are the methods used",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.91,
+      "ttft": 0.32,
+      "token_count": 10,
+      "token_rate": 17.0,
+      "response_length": 170
+    },
+    "vector_search_time": 0.83,
+    "total_time": 1.74,
+    "context_length": 2876,
+    "results_count": {
+      "methods": 2,
+      "classes": 1
+    }
+  },
+  "answer_generation": {
+    "total_time": 1.69,
+    "ttft": 0.25,
+    "token_count": 30,
+    "token_rate": 20.8,
+    "response_length": 476
+  },
+  "total_time": 3.44
+}

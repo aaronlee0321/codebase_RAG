@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-12-19T11:07:43.566446",
+  "user_id": "7a999826-93cf-4623-a508-e3f11deaa9f7",
+  "query": "@ECprojectileActor.cs what is the date type of rapidFireDelay",
+  "cleaned_query": "what is the date type of rapidFireDelay",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\packs\\WebDemoAssets\\scripts\\ECprojectileActor.cs"
+  ],
+  "context_retrieval": {
+    "query": "what is the date type of rapidFireDelay",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.68,
+      "ttft": 0.42,
+      "token_count": 6,
+      "token_rate": 22.4,
+      "response_length": 84
+    },
+    "vector_search_time": 1.07,
+    "total_time": 1.75,
+    "context_length": 10129,
+    "results_count": {
+      "methods": 2,
+      "classes": 2
+    }
+  },
+  "context_truncated": {
+    "original_length": 10129,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 0.53,
+    "ttft": 0.33,
+    "token_count": 7,
+    "token_rate": 35.2,
+    "response_length": 45
+  },
+  "total_time": 2.33
+}

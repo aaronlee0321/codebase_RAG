@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-12-19T13:31:50.195768",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@CameraBounds.cs @BushArea.cs ",
+  "cleaned_query": "@BushArea.cs",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\LevelDesign\\BushArea.cs",
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\CameraModule\\Scripts\\CameraBounds.cs"
+  ],
+  "context_retrieval": {
+    "query": "@BushArea.cs",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.72,
+      "ttft": 0.29,
+      "token_count": 10,
+      "token_rate": 23.1,
+      "response_length": 157
+    },
+    "vector_search_time": 0.76,
+    "total_time": 1.49,
+    "context_length": 354,
+    "results_count": {
+      "methods": 0,
+      "classes": 1
+    }
+  },
+  "answer_generation": {
+    "total_time": 1.37,
+    "ttft": 0.27,
+    "token_count": 23,
+    "token_rate": 20.9,
+    "response_length": 399
+  },
+  "total_time": 2.85
+}

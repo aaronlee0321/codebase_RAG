@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T11:39:47.875925",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@KeepAlive.cs summarise this file",
+  "cleaned_query": "summarise this file",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\KeepAlive.cs"
+  ],
+  "context_retrieval": {
+    "query": "summarise this file",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.25,
+      "ttft": 0.28,
+      "token_count": 13,
+      "token_rate": 13.4,
+      "response_length": 181
+    },
+    "vector_search_time": 0.76,
+    "total_time": 2.02,
+    "context_length": 46,
+    "results_count": {
+      "methods": 0,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.47,
+    "ttft": 0.29,
+    "token_count": 6,
+    "token_rate": 33.6,
+    "response_length": 61
+  },
+  "total_time": 2.5
+}

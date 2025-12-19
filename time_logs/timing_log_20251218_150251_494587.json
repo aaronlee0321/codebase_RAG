@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T15:02:46.051725",
+  "user_id": "6d3dc2c1-70ab-4165-91f8-4765f726bf8f",
+  "query": "@codebase What mechanism is used to load manager prefabs at runtime, and where are those prefabs expected to be located?",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "What mechanism is used to load manager prefabs at runtime, and where are those prefabs expected to be located?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.08,
+      "ttft": 0.4,
+      "token_count": 12,
+      "token_rate": 17.8,
+      "response_length": 217
+    },
+    "vector_search_time": 0.99,
+    "total_time": 2.09,
+    "context_length": 29454,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 29454,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 3.31,
+    "ttft": 0.23,
+    "token_count": 53,
+    "token_rate": 17.2,
+    "response_length": 803
+  },
+  "total_time": 5.44
+}

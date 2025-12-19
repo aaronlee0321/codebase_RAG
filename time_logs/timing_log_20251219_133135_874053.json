@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T13:31:33.777322",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@ButtonHandler.cs summarize this file",
+  "cleaned_query": "summarize this file",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\ButtonHandler.cs"
+  ],
+  "context_retrieval": {
+    "query": "summarize this file",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.5,
+      "ttft": 0.27,
+      "token_count": 6,
+      "token_rate": 26.5,
+      "response_length": 77
+    },
+    "vector_search_time": 1.04,
+    "total_time": 1.55,
+    "context_length": 46,
+    "results_count": {
+      "methods": 0,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.54,
+    "ttft": 0.31,
+    "token_count": 6,
+    "token_rate": 25.3,
+    "response_length": 61
+  },
+  "total_time": 2.1
+}

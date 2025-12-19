@@ -1,0 +1,1170 @@
+[
+  {
+    "file_name": "AbilityBase.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityBase.cs"
+  },
+  {
+    "file_name": "AbilityBearTrap.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityBearTrap.cs"
+  },
+  {
+    "file_name": "AbilityFireDash.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityFireDash.cs"
+  },
+  {
+    "file_name": "AbilityHook.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityHook.cs"
+  },
+  {
+    "file_name": "AbilityKamikaze.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityKamikaze.cs"
+  },
+  {
+    "file_name": "AbilityManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityManager.cs"
+  },
+  {
+    "file_name": "AbilityStorm.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityStorm.cs"
+  },
+  {
+    "file_name": "AbilityWhirlwindChains.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityWhirlwindChains.cs"
+  },
+  {
+    "file_name": "AnalyticsManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\FirebaseModule\\Scripts\\AnalyticsManager.cs"
+  },
+  {
+    "file_name": "APIHandler.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\APIModule\\Scripts\\APIHandler.cs"
+  },
+  {
+    "file_name": "AssetContainer.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\AssetContainer.cs"
+  },
+  {
+    "file_name": "AudioClipData.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\AudioModule\\Scripts\\AudioClipData.cs"
+  },
+  {
+    "file_name": "AudioEmitter.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\AudioModule\\Scripts\\AudioEmitter.cs"
+  },
+  {
+    "file_name": "AudioHelper.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\AudioModule\\Scripts\\AudioHelper.cs"
+  },
+  {
+    "file_name": "AudioManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\AudioModule\\Scripts\\AudioManager.cs"
+  },
+  {
+    "file_name": "AudioStats.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\AudioModule\\Scripts\\AudioStats.cs"
+  },
+  {
+    "file_name": "AuthState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameStateMachineModule\\States\\AuthState.cs"
+  },
+  {
+    "file_name": "AutoAnchorWindow.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Editor\\AutoAnchorWindow.cs"
+  },
+  {
+    "file_name": "AutoReleasedFx.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Effects\\AutoReleasedFx.cs"
+  },
+  {
+    "file_name": "BounceUI.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\UI\\BounceUI.cs"
+  },
+  {
+    "file_name": "BushArea.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\LevelDesign\\BushArea.cs"
+  },
+  {
+    "file_name": "ButtonHandler.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\ButtonHandler.cs"
+  },
+  {
+    "file_name": "CameraBounds.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\CameraModule\\Scripts\\CameraBounds.cs"
+  },
+  {
+    "file_name": "CameraFollowIsometric.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\CameraModule\\Scripts\\CameraFollowIsometric.cs"
+  },
+  {
+    "file_name": "CameraManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\CameraModule\\Scripts\\CameraManager.cs"
+  },
+  {
+    "file_name": "CameraScreenFXBehaviour.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\CameraModule\\Scripts\\CameraScreenFXBehaviour.cs"
+  },
+  {
+    "file_name": "CameraStrategy.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\CameraModule\\Scripts\\CameraStrategy.cs"
+  },
+  {
+    "file_name": "CameraStrategy_MultipleTargets.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\CameraModule\\Scripts\\CameraStrategy_MultipleTargets.cs"
+  },
+  {
+    "file_name": "ChildCanvasUtility.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\ChildCanvasUtility.cs"
+  },
+  {
+    "file_name": "ClientConnector.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\NetworkingModule\\Scripts\\ClientConnector.cs"
+  },
+  {
+    "file_name": "ClientDataEvent.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\ClientDataEvent.cs"
+  },
+  {
+    "file_name": "CollectionBase.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\CollectionBase.cs"
+  },
+  {
+    "file_name": "CollectionExtensions.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\CollectionExtensions.cs"
+  },
+  {
+    "file_name": "ColorChanger.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\ColorChanger.cs"
+  },
+  {
+    "file_name": "Constants.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GamePlay\\Scripts\\Constants.cs"
+  },
+  {
+    "file_name": "CooldownModifier.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\CooldownModifier.cs"
+  },
+  {
+    "file_name": "CountdownManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\UI\\CountdownManager.cs"
+  },
+  {
+    "file_name": "DamageVisual.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\DamageVisual.cs"
+  },
+  {
+    "file_name": "DatabaseManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameData\\Scripts\\DatabaseManager.cs"
+  },
+  {
+    "file_name": "DebugUI.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TestingModule\\DebugUI.cs"
+  },
+  {
+    "file_name": "DedicatedServer.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\NetworkingModule\\Scripts\\DedicatedServer.cs"
+  },
+  {
+    "file_name": "DeepCloneExtensions.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\DeepCloneExtensions.cs"
+  },
+  {
+    "file_name": "DesignerHelper.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Helpers\\DesignerHelper.cs"
+  },
+  {
+    "file_name": "DestroyObjectsAction.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\DestroyObjectsAction.cs"
+  },
+  {
+    "file_name": "Destructible.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\LevelDesign\\Destructible.cs"
+  },
+  {
+    "file_name": "DeviceCollectionEditor.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GamePlayModule\\Editor\\DeviceCollectionEditor.cs"
+  },
+  {
+    "file_name": "DeviceQualityCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GamePlayModule\\Scripts\\DeviceQualityCollection.cs"
+  },
+  {
+    "file_name": "DeviceQualityConfig.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GamePlayModule\\Scripts\\DeviceQualityConfig.cs"
+  },
+  {
+    "file_name": "DeviceQualityManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GamePlayModule\\Scripts\\DeviceQualityManager.cs"
+  },
+  {
+    "file_name": "DigitalGlitch.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\GameAssets\\Shaders\\Kino\\Glitch\\DigitalGlitch.cs"
+  },
+  {
+    "file_name": "DigitalGlitchEditor.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\GameAssets\\Shaders\\Kino\\Glitch\\Editor\\DigitalGlitchEditor.cs"
+  },
+  {
+    "file_name": "ECCameraShake.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\packs\\WebDemoAssets\\scripts\\ECCameraShake.cs"
+  },
+  {
+    "file_name": "ECCameraShakeCaller.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\packs\\WebDemoAssets\\scripts\\ECCameraShakeCaller.cs"
+  },
+  {
+    "file_name": "ECCameraShakeProjectile.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\packs\\WebDemoAssets\\scripts\\ECCameraShakeProjectile.cs"
+  },
+  {
+    "file_name": "ECdestroyMe.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\scripts\\ECdestroyMe.cs"
+  },
+  {
+    "file_name": "ECEffectActor.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\packs\\WebDemoAssets\\scripts\\ECEffectActor.cs"
+  },
+  {
+    "file_name": "ECExplodingProjectile.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\packs\\WebDemoAssets\\scripts\\ECExplodingProjectile.cs"
+  },
+  {
+    "file_name": "ECparticleColorChangerMaster.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\scripts\\ECparticleColorChangerMaster.cs"
+  },
+  {
+    "file_name": "ECProjectile.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\packs\\WebDemoAssets\\scripts\\ECProjectile.cs"
+  },
+  {
+    "file_name": "ECprojectileActor.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\packs\\WebDemoAssets\\scripts\\ECprojectileActor.cs"
+  },
+  {
+    "file_name": "EffectApplier.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\EffectApplier.cs"
+  },
+  {
+    "file_name": "EnemyDiedEvent.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\EventsModule\\Scripts\\EnemyDiedEvent.cs"
+  },
+  {
+    "file_name": "ErrorBox.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\UI\\ErrorBox.cs"
+  },
+  {
+    "file_name": "EventManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\EventsModule\\Scripts\\EventManager.cs"
+  },
+  {
+    "file_name": "ExplosionFX.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Effects\\ExplosionFX.cs"
+  },
+  {
+    "file_name": "FinalGameScoreUI.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\UI\\FinalGameScoreUI.cs"
+  },
+  {
+    "file_name": "FinalState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameStateMachineModule\\States\\FinalState.cs"
+  },
+  {
+    "file_name": "FirebaseConfigCollectionBase.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\FirebaseConfigCollectionBase.cs"
+  },
+  {
+    "file_name": "FirestoreDebugHelper.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\FirestoreDebugHelper.cs"
+  },
+  {
+    "file_name": "FirestoreDocumentConverterFactory.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\FirestoreDocumentConverterFactory.cs"
+  },
+  {
+    "file_name": "FirestoreManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\FirebaseModule\\Scripts\\FirestoreManager.cs"
+  },
+  {
+    "file_name": "FirestoreTankShopController.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\FirebaseModule\\Scripts\\FirestoreTankShopController.cs"
+  },
+  {
+    "file_name": "FirestoreUserController.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\FirebaseModule\\Scripts\\FirestoreUserController.cs"
+  },
+  {
+    "file_name": "ForceField.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\LevelDesign\\ForceField.cs"
+  },
+  {
+    "file_name": "FPSDebug.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\FPSDebug.cs"
+  },
+  {
+    "file_name": "FunctionGrammarChecker.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Editor\\FunctionGrammarChecker.cs"
+  },
+  {
+    "file_name": "GameAssetCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameAssetModule\\Scripts\\GameAssetCollection.cs"
+  },
+  {
+    "file_name": "GameAssetCollection2.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameAssetModule\\Scripts\\GameAssetCollection2.cs"
+  },
+  {
+    "file_name": "GameAssetDocument.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameAssetModule\\Scripts\\GameAssetDocument.cs"
+  },
+  {
+    "file_name": "GameAssetGroups.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameAssetModule\\Scripts\\GameAssetGroups.cs"
+  },
+  {
+    "file_name": "GameDatabase.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameData\\Scripts\\GameDatabase.cs"
+  },
+  {
+    "file_name": "GameEvent.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\EventsModule\\Scripts\\GameEvent.cs"
+  },
+  {
+    "file_name": "GameManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GamePlay\\Scripts\\GameManager.cs"
+  },
+  {
+    "file_name": "GameMapDocument.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MapModule\\Scripts\\GameMapDocument.cs"
+  },
+  {
+    "file_name": "GameNetworkTimer.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameTimeModule\\Scripts\\GameNetworkTimer.cs"
+  },
+  {
+    "file_name": "GamePlayState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameStateMachineModule\\States\\GamePlayState.cs"
+  },
+  {
+    "file_name": "GameServer.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\GameServer.cs"
+  },
+  {
+    "file_name": "GameState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameStateMachineModule\\GameState.cs"
+  },
+  {
+    "file_name": "GameStateMachine.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameStateMachineModule\\GameStateMachine.cs"
+  },
+  {
+    "file_name": "GenericCollectionEditor.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\GenericCollectionEditor.cs"
+  },
+  {
+    "file_name": "Grasses.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\LevelDesign\\Grasses.cs"
+  },
+  {
+    "file_name": "GrayScaleImage.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\GrayScaleImage.cs"
+  },
+  {
+    "file_name": "HoldButton.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\HoldButton.cs"
+  },
+  {
+    "file_name": "HomeState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameStateMachineModule\\States\\HomeState.cs"
+  },
+  {
+    "file_name": "IAPManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\InAppPurchasesModule\\Scripts\\IAPManager.cs"
+  },
+  {
+    "file_name": "IDamagable.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\IDamagable.cs"
+  },
+  {
+    "file_name": "IEventManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\EventsModule\\Scripts\\IEventManager.cs"
+  },
+  {
+    "file_name": "IFusionObject.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\IFusionObject.cs"
+  },
+  {
+    "file_name": "IGameState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameStateMachineModule\\IGameState.cs"
+  },
+  {
+    "file_name": "IInitializableManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GamePlay\\Scripts\\IInitializableManager.cs"
+  },
+  {
+    "file_name": "InputController.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\InputModule\\Scripts\\InputController.cs"
+  },
+  {
+    "file_name": "IntermediateLevelScoreUI.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\UI\\IntermediateLevelScoreUI.cs"
+  },
+  {
+    "file_name": "InventoryItem.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\InventoryModule\\Scripts\\InventoryItem.cs"
+  },
+  {
+    "file_name": "InventoryManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\InventoryModule\\Scripts\\InventoryManager.cs"
+  },
+  {
+    "file_name": "InverterModifier.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\InverterModifier.cs"
+  },
+  {
+    "file_name": "IStorage.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\IStorage.cs"
+  },
+  {
+    "file_name": "KeepAlive.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\KeepAlive.cs"
+  },
+  {
+    "file_name": "LanguageExporter.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\LocalizationModule\\Editor\\LanguageExporter.cs"
+  },
+  {
+    "file_name": "LanguageManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\LocalizationModule\\Scripts\\LanguageManager.cs"
+  },
+  {
+    "file_name": "LaserBeam.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\LevelDesign\\LaserBeam.cs"
+  },
+  {
+    "file_name": "LaserSightLine.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\TankVisuals\\LaserSightLine.cs"
+  },
+  {
+    "file_name": "LevelBehaviour.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\LevelDesign\\LevelBehaviour.cs"
+  },
+  {
+    "file_name": "LevelManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\LevelManager.cs"
+  },
+  {
+    "file_name": "LoadingState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameStateMachineModule\\States\\LoadingState.cs"
+  },
+  {
+    "file_name": "LobbyNetworkTimer.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameTimeModule\\Scripts\\LobbyNetworkTimer.cs"
+  },
+  {
+    "file_name": "LobbyState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameStateMachineModule\\States\\LobbyState.cs"
+  },
+  {
+    "file_name": "LocalizationHelper.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\LocalizationModule\\Scripts\\LocalizationHelper.cs"
+  },
+  {
+    "file_name": "LocalizeStringComponent.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\LocalizationModule\\Scripts\\LocalizeStringComponent.cs"
+  },
+  {
+    "file_name": "LocKeys.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\LocalizationModule\\Scripts\\LocKeys.cs"
+  },
+  {
+    "file_name": "LockUiAction.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\LockUiAction.cs"
+  },
+  {
+    "file_name": "LookAtMainCamera.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\LookAtMainCamera.cs"
+  },
+  {
+    "file_name": "MapCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MapModule\\Scripts\\MapCollection.cs"
+  },
+  {
+    "file_name": "MasterDataManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\FirebaseModule\\Scripts\\MasterDataManager.cs"
+  },
+  {
+    "file_name": "MatchCancellingState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\State\\MatchCancellingState.cs"
+  },
+  {
+    "file_name": "MatchConditionData.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\Data\\MatchConditionData.cs"
+  },
+  {
+    "file_name": "MatchCountdownState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\State\\MatchCountdownState.cs"
+  },
+  {
+    "file_name": "MatchData.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\Data\\MatchData.cs"
+  },
+  {
+    "file_name": "MatchEndingState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\State\\MatchEndingState.cs"
+  },
+  {
+    "file_name": "MatchFoundState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\State\\MatchFoundState.cs"
+  },
+  {
+    "file_name": "MatchIdleState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\State\\MatchIdleState.cs"
+  },
+  {
+    "file_name": "MatchIndexs.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\MatchIndexs.cs"
+  },
+  {
+    "file_name": "MatchLeavingState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\State\\MatchLeavingState.cs"
+  },
+  {
+    "file_name": "MatchLoadingState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\State\\MatchLoadingState.cs"
+  },
+  {
+    "file_name": "MatchmakingCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\Data\\MatchmakingCollection.cs"
+  },
+  {
+    "file_name": "MatchmakingCollectionEditor.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\Editor\\MatchmakingCollectionEditor.cs"
+  },
+  {
+    "file_name": "MatchmakingDocument.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\Data\\MatchmakingDocument.cs"
+  },
+  {
+    "file_name": "MatchmakingManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\MatchmakingManager.cs"
+  },
+  {
+    "file_name": "MatchmakingState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameStateMachineModule\\States\\MatchmakingState.cs"
+  },
+  {
+    "file_name": "MatchPickingState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\State\\MatchPickingState.cs"
+  },
+  {
+    "file_name": "MatchPlayerData.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\Data\\MatchPlayerData.cs"
+  },
+  {
+    "file_name": "MatchPlayingState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\State\\MatchPlayingState.cs"
+  },
+  {
+    "file_name": "MatchSearchingState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\State\\MatchSearchingState.cs"
+  },
+  {
+    "file_name": "MatchState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\State\\MatchState.cs"
+  },
+  {
+    "file_name": "MatchTeamData.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\Data\\MatchTeamData.cs"
+  },
+  {
+    "file_name": "MinimapCameraFollow.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\CameraModule\\Scripts\\MinimapCameraFollow.cs"
+  },
+  {
+    "file_name": "MobileInput.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\InputModule\\Scripts\\MobileInput.cs"
+  },
+  {
+    "file_name": "MotorShake.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\TankVisuals\\MotorShake.cs"
+  },
+  {
+    "file_name": "MouseCursor.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\UICursorModule\\Scripts\\MouseCursor.cs"
+  },
+  {
+    "file_name": "MusicPlayer.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\AudioModule\\Scripts\\MusicPlayer.cs"
+  },
+  {
+    "file_name": "MuzzleFlash.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Effects\\MuzzleFlash.cs"
+  },
+  {
+    "file_name": "MuzzleFlashGigavolt.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Effects\\MuzzleFlashGigavolt.cs"
+  },
+  {
+    "file_name": "NamingConventionScanner.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Editor\\NamingConventionScanner.cs"
+  },
+  {
+    "file_name": "NetPlayerWallet.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Gameplay\\NetPlayerWallet.cs"
+  },
+  {
+    "file_name": "NetTankStats.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Gameplay\\NetTankStats.cs"
+  },
+  {
+    "file_name": "NetworkRunnerStaticRefs.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\NetworkRunnerStaticRefs.cs"
+  },
+  {
+    "file_name": "NPCChatStatesData.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\NPCChatStatesData.cs"
+  },
+  {
+    "file_name": "ObjectPresenter.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\ObjectPresenter.cs"
+  },
+  {
+    "file_name": "OnboardingMatchIdlingState.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameStateMachineModule\\States\\OnboardingMatchIdlingState.cs"
+  },
+  {
+    "file_name": "OutpostManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Gameplay\\OutpostManager.cs"
+  },
+  {
+    "file_name": "PackRewardCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\PackRewardCollection.cs"
+  },
+  {
+    "file_name": "PackRewardDocument.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\PackRewardDocument.cs"
+  },
+  {
+    "file_name": "Panel.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\UI\\Panel.cs"
+  },
+  {
+    "file_name": "PickingTimer.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameTimeModule\\Scripts\\PickingTimer.cs"
+  },
+  {
+    "file_name": "PingDebug.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\PingDebug.cs"
+  },
+  {
+    "file_name": "Player.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Player.cs"
+  },
+  {
+    "file_name": "PlayerCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\PlayerModule\\Scripts\\PlayerCollection.cs"
+  },
+  {
+    "file_name": "PlayerDocument.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\PlayerModule\\Scripts\\PlayerDocument.cs"
+  },
+  {
+    "file_name": "PlayerDocumentConverter.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\PlayerModule\\Scripts\\PlayerDocumentConverter.cs"
+  },
+  {
+    "file_name": "PlayerElos.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\MatchMakingFusionModule\\Scripts\\PlayerElos.cs"
+  },
+  {
+    "file_name": "PlayerNetwork.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\PlayerNetwork.cs"
+  },
+  {
+    "file_name": "PlayerScoredEvent.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\EventsModule\\Scripts\\PlayerScoredEvent.cs"
+  },
+  {
+    "file_name": "PlayerSettingsCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\PlayerModule\\Scripts\\PlayerSettingsCollection.cs"
+  },
+  {
+    "file_name": "PlayerSettingsDocument.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\PlayerModule\\Scripts\\PlayerSettingsDocument.cs"
+  },
+  {
+    "file_name": "PlayerSettingsDocumentConverter.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\PlayerModule\\Scripts\\PlayerSettingsDocumentConverter.cs"
+  },
+  {
+    "file_name": "PopupAnimation.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\PopupAnimation.cs"
+  },
+  {
+    "file_name": "PowerupElement.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\LevelDesign\\PowerupElement.cs"
+  },
+  {
+    "file_name": "PowerupSpawner.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\LevelDesign\\PowerupSpawner.cs"
+  },
+  {
+    "file_name": "ProductCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\InAppPurchasesModule\\Scripts\\ProductCollection.cs"
+  },
+  {
+    "file_name": "ProductDocument.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\InAppPurchasesModule\\Scripts\\ProductDocument.cs"
+  },
+  {
+    "file_name": "ProjectileCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\ProjectileCollection.cs"
+  },
+  {
+    "file_name": "ProjectileDocument.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\ProjectileDocument.cs"
+  },
+  {
+    "file_name": "RandomNameGenerator.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\PlayerModule\\Scripts\\RandomNameGenerator.cs"
+  },
+  {
+    "file_name": "ReadyupIndicator.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\UI\\ReadyupIndicator.cs"
+  },
+  {
+    "file_name": "RegionDetection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\RegionDetection.cs"
+  },
+  {
+    "file_name": "RemoteConfigManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\FirebaseModule\\Scripts\\RemoteConfigManager.cs"
+  },
+  {
+    "file_name": "RenderTextureContextMenu.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Editor\\RenderTextureContextMenu.cs"
+  },
+  {
+    "file_name": "RenderTextureSaver.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\RenderTextureSaver.cs"
+  },
+  {
+    "file_name": "RewardData.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\RewardData.cs"
+  },
+  {
+    "file_name": "RotateForever.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\RotateForever.cs"
+  },
+  {
+    "file_name": "RotatingTurret.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\LevelDesign\\RotatingTurret.cs"
+  },
+  {
+    "file_name": "RuntimeCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\FirebaseModule\\Scripts\\RuntimeCollection.cs"
+  },
+  {
+    "file_name": "SaveSystem.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\SaveSystem.cs"
+  },
+  {
+    "file_name": "SceneIDs.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GamePlay\\Scripts\\SceneIDs.cs"
+  },
+  {
+    "file_name": "SceneLoader.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GamePlay\\Scripts\\SceneLoader.cs"
+  },
+  {
+    "file_name": "ScreenShaker.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\CameraModule\\Scripts\\ScreenShaker.cs"
+  },
+  {
+    "file_name": "ScriptableObjectCloner.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\ScriptableObjectCloner.cs"
+  },
+  {
+    "file_name": "Serialization.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\Serialization.cs"
+  },
+  {
+    "file_name": "ServerDataEvent.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\NetworkingModule\\Scripts\\ServerDataEvent.cs"
+  },
+  {
+    "file_name": "Shot.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Shot.cs"
+  },
+  {
+    "file_name": "ShotAnim.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\ShotAnim.cs"
+  },
+  {
+    "file_name": "ShotRope.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\ShotRope.cs"
+  },
+  {
+    "file_name": "ShotTrap.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\ShotTrap.cs"
+  },
+  {
+    "file_name": "ShowSkipTutorialAction.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\ShowSkipTutorialAction.cs"
+  },
+  {
+    "file_name": "ShowTutorialButtonAction.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\ShowTutorialButtonAction.cs"
+  },
+  {
+    "file_name": "ShowTutorialMessageAction.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\ShowTutorialMessageAction.cs"
+  },
+  {
+    "file_name": "Singleton.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\Singleton.cs"
+  },
+  {
+    "file_name": "SOMatchData.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\SOMatchData.cs"
+  },
+  {
+    "file_name": "SOMatchPlayerData.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Gameplay\\SOMatchPlayerData.cs"
+  },
+  {
+    "file_name": "SoundCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\AudioModule\\Scripts\\SoundCollection.cs"
+  },
+  {
+    "file_name": "SoundDocument.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\AudioModule\\Scripts\\SoundDocument.cs"
+  },
+  {
+    "file_name": "SOUpgradeDefinition.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Gameplay\\SOUpgradeDefinition.cs"
+  },
+  {
+    "file_name": "SpawnObjectAction.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\SpawnObjectAction.cs"
+  },
+  {
+    "file_name": "SpawnObjectActionByPosition.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\SpawnObjectActionByPosition.cs"
+  },
+  {
+    "file_name": "SpawnObjectDataSO.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\SpawnObjectDataSO.cs"
+  },
+  {
+    "file_name": "SpawnObjectDataSO1.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\SpawnObjectDataSO1.cs"
+  },
+  {
+    "file_name": "SpawnObjectsAction.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\SpawnObjectsAction.cs"
+  },
+  {
+    "file_name": "SpawnObjectsActionByPosition.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\SpawnObjectsActionByPosition.cs"
+  },
+  {
+    "file_name": "SpawnPoint.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\LevelDesign\\SpawnPoint.cs"
+  },
+  {
+    "file_name": "Step.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\Step.cs"
+  },
+  {
+    "file_name": "TankAbilityCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankAbilityCollection.cs"
+  },
+  {
+    "file_name": "TankAbilityCollectionEditor.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Editor\\TankAbilityCollectionEditor.cs"
+  },
+  {
+    "file_name": "TankAbilityDocument.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankAbilityDocument.cs"
+  },
+  {
+    "file_name": "TankBelts.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\TankVisuals\\TankBelts.cs"
+  },
+  {
+    "file_name": "TankCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankCollection.cs"
+  },
+  {
+    "file_name": "TankCollectionEditor.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Editor\\TankCollectionEditor.cs"
+  },
+  {
+    "file_name": "TankComponents.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankComponents.cs"
+  },
+  {
+    "file_name": "TankDamageStepVariable.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankDamageStepVariable.cs"
+  },
+  {
+    "file_name": "TankDamageVisual.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\TankVisuals\\TankDamageVisual.cs"
+  },
+  {
+    "file_name": "TankDecorCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankDecorCollection.cs"
+  },
+  {
+    "file_name": "TankDecorDocument.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankDecorDocument.cs"
+  },
+  {
+    "file_name": "TankDecorEditor.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Editor\\TankDecorEditor.cs"
+  },
+  {
+    "file_name": "TankDocument.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankDocument.cs"
+  },
+  {
+    "file_name": "TankHullCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankHullCollection.cs"
+  },
+  {
+    "file_name": "TankHullCollectionEditor.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Editor\\TankHullCollectionEditor.cs"
+  },
+  {
+    "file_name": "TankHullDocument.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankHullDocument.cs"
+  },
+  {
+    "file_name": "TankIndicator.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\TankVisuals\\TankIndicator.cs"
+  },
+  {
+    "file_name": "TankNameComponent.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\TankNameComponent.cs"
+  },
+  {
+    "file_name": "TankPartMesh.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\TankVisuals\\TankPartMesh.cs"
+  },
+  {
+    "file_name": "TankPartVisual.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\TankVisuals\\TankPartVisual.cs"
+  },
+  {
+    "file_name": "TankPreview.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\UI\\TankPreview.cs"
+  },
+  {
+    "file_name": "TankSelectedEvent.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\EventsModule\\Scripts\\TankSelectedEvent.cs"
+  },
+  {
+    "file_name": "TankStatBaseData.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankStatBaseData.cs"
+  },
+  {
+    "file_name": "TankStickerCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankStickerCollection.cs"
+  },
+  {
+    "file_name": "TankTeleportInEffect.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Effects\\TankTeleportInEffect.cs"
+  },
+  {
+    "file_name": "TankTeleportOutEffect.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Effects\\TankTeleportOutEffect.cs"
+  },
+  {
+    "file_name": "TankUI.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\UI\\TankUI.cs"
+  },
+  {
+    "file_name": "TankUpgradeCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Gameplay\\TankUpgradeCollection.cs"
+  },
+  {
+    "file_name": "TankUpgradeCollectionEditor.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Editor\\TankUpgradeCollectionEditor.cs"
+  },
+  {
+    "file_name": "TankVisual.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\TankVisual.cs"
+  },
+  {
+    "file_name": "TankVisualsVfx.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\TankVisualsVfx.cs"
+  },
+  {
+    "file_name": "TankWeaponCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankWeaponCollection.cs"
+  },
+  {
+    "file_name": "TankWeaponCollectionEditor.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Editor\\TankWeaponCollectionEditor.cs"
+  },
+  {
+    "file_name": "TankWeaponDocument.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankWeaponDocument.cs"
+  },
+  {
+    "file_name": "TankWrapCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankWrapCollection.cs"
+  },
+  {
+    "file_name": "TargetMarker.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Effects\\TargetMarker.cs"
+  },
+  {
+    "file_name": "TextureDownloader.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Helpers\\TextureDownloader.cs"
+  },
+  {
+    "file_name": "TouchHandler.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\TouchHandler.cs"
+  },
+  {
+    "file_name": "Turret.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Turret.cs"
+  },
+  {
+    "file_name": "TurretSpawner.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\TurretSpawner.cs"
+  },
+  {
+    "file_name": "TurretWeapon.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\TurretWeapon.cs"
+  },
+  {
+    "file_name": "TutorialButtonPopup.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Popups\\TUTORIAL_BUTTON_POPUP\\Scripts\\TutorialButtonPopup.cs"
+  },
+  {
+    "file_name": "TutorialButtonPopupAnimation.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Popups\\TUTORIAL_BUTTON_POPUP\\Scripts\\TutorialButtonPopupAnimation.cs"
+  },
+  {
+    "file_name": "TutorialDoneAction.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\TutorialDoneAction.cs"
+  },
+  {
+    "file_name": "TutorialInitModifier.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\TutorialInitModifier.cs"
+  },
+  {
+    "file_name": "TutorialLockUIPopup.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Popups\\TUTORIAL_LOCK_UI\\Scripts\\TutorialLockUIPopup.cs"
+  },
+  {
+    "file_name": "TutorialNpcPopup.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Popups\\TUTORIAL_NPC_POPUP\\Scripts\\TutorialNpcPopup.cs"
+  },
+  {
+    "file_name": "TutorialSelector.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\TutorialSelector.cs"
+  },
+  {
+    "file_name": "TutorialsEventData.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\TutorialsEventData.cs"
+  },
+  {
+    "file_name": "TutorialSkipPopup.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Popups\\TUTORIAL_SKIP_POPUP\\Scripts\\TutorialSkipPopup.cs"
+  },
+  {
+    "file_name": "TutorialsManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\TutorialsManager.cs"
+  },
+  {
+    "file_name": "TutorialStepDoneAction.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\TutorialStepDoneAction.cs"
+  },
+  {
+    "file_name": "TutorialStepModifier.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\TutorialStepModifier.cs"
+  },
+  {
+    "file_name": "Tween.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\Tween.cs"
+  },
+  {
+    "file_name": "UIButton.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\UIButton.cs"
+  },
+  {
+    "file_name": "UIPresenter.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\UIPresenter.cs"
+  },
+  {
+    "file_name": "UpgradeManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Gameplay\\UpgradeManager.cs"
+  },
+  {
+    "file_name": "UserCollection.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\PlayerModule\\Scripts\\UserCollection.cs"
+  },
+  {
+    "file_name": "UserDataCollectionBase.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameDataModule\\Scripts\\UserDataCollectionBase.cs"
+  },
+  {
+    "file_name": "UserDocument.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\PlayerModule\\Scripts\\UserDocument.cs"
+  },
+  {
+    "file_name": "UserDocumentConverter.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\PlayerModule\\Scripts\\UserDocumentConverter.cs"
+  },
+  {
+    "file_name": "VibrateButton.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\VibrateButton.cs"
+  },
+  {
+    "file_name": "WaitHidePopupAction.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\WaitHidePopupAction.cs"
+  },
+  {
+    "file_name": "WaitingObjectDeactiveOrDestroyActionById.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\WaitingObjectDeactiveOrDestroyActionById.cs"
+  },
+  {
+    "file_name": "WaitingObjectDeactiveOrDestroyActionByRef.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\WaitingObjectDeactiveOrDestroyActionByRef.cs"
+  },
+  {
+    "file_name": "WaitingObjectMoveToAction.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\WaitingObjectMoveToAction.cs"
+  },
+  {
+    "file_name": "WaitingObjectMoveToActionByVector.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\WaitingObjectMoveToActionByVector.cs"
+  },
+  {
+    "file_name": "WaitingObjectSpawnAction.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\WaitingObjectSpawnAction.cs"
+  },
+  {
+    "file_name": "WaitScreenHideAction.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\WaitScreenHideAction.cs"
+  },
+  {
+    "file_name": "WaitScreenShowAction.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\WaitScreenShowAction.cs"
+  },
+  {
+    "file_name": "WaitShowPopupAction.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\BehaviorTree\\Tutorials\\Scripts\\Actions\\WaitShowPopupAction.cs"
+  },
+  {
+    "file_name": "Weapon.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Weapon.cs"
+  },
+  {
+    "file_name": "WeaponManager.cs",
+    "absolute_path": "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\WeaponManager.cs"
+  }
+]

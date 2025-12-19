@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-12-19T16:07:02.139149",
+  "user_id": "ee75d610-89a9-4f34-8af8-52e33ebe2ce5",
+  "query": "@AbilityBearTrap.cs what are the methods defined",
+  "cleaned_query": "what are the methods defined",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityBearTrap.cs"
+  ],
+  "context_retrieval": {
+    "query": "what are the methods defined",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.83,
+      "ttft": 0.31,
+      "token_count": 11,
+      "token_rate": 21.3,
+      "response_length": 160
+    },
+    "vector_search_time": 7.2,
+    "total_time": 8.04,
+    "context_length": 10685,
+    "results_count": {
+      "methods": 4,
+      "classes": 2
+    }
+  },
+  "context_truncated": {
+    "original_length": 10685,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 5.74,
+    "ttft": 0.34,
+    "token_count": 114,
+    "token_rate": 21.1,
+    "response_length": 2003
+  },
+  "total_time": 13.84
+}

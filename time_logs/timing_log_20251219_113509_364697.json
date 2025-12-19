@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T11:35:05.678533",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@EventManager.cs what are some global variables in this",
+  "cleaned_query": "what are some global variables in this",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\EventsModule\\Scripts\\EventManager.cs"
+  ],
+  "context_retrieval": {
+    "query": "what are some global variables in this",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.6,
+      "ttft": 0.3,
+      "token_count": 7,
+      "token_rate": 23.1,
+      "response_length": 100
+    },
+    "vector_search_time": 1.16,
+    "total_time": 1.76,
+    "context_length": 4175,
+    "results_count": {
+      "methods": 6,
+      "classes": 1
+    }
+  },
+  "answer_generation": {
+    "total_time": 1.92,
+    "ttft": 0.4,
+    "token_count": 31,
+    "token_rate": 20.4,
+    "response_length": 503
+  },
+  "total_time": 3.69
+}

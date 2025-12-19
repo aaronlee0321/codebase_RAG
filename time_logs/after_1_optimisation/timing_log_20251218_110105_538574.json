@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-12-18T11:00:56.038510",
+  "user_id": "1ce31178-48a1-4c39-aab7-72626b31e426",
+  "query": "@codebase Show me an example of how to call SceneLoader to load the Lobby scene.",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "Show me an example of how to call SceneLoader to load the Lobby scene.",
+    "rerank_enabled": false,
+    "hyde_generation": {
+      "total_time": 0.85,
+      "ttft": 0.53,
+      "token_count": 6,
+      "token_rate": 18.5,
+      "response_length": 45
+    },
+    "hyde_v2_generation": {
+      "total_time": 5.13,
+      "ttft": 3.94,
+      "token_count": 15,
+      "token_rate": 12.6,
+      "response_length": 209
+    },
+    "vector_search_time": 0.88,
+    "total_time": 6.86,
+    "context_length": 23014,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 23014,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 2.59,
+    "ttft": 0.42,
+    "token_count": 32,
+    "token_rate": 14.7,
+    "response_length": 595
+  },
+  "total_time": 9.5
+}

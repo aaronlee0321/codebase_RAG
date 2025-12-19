@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T15:42:46.530533",
+  "user_id": "360ddfdd-f5c0-4506-ac25-b0197dc6de7e",
+  "query": "@codebase Where and how is the list of managers to be initialized defined?",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "Where and how is the list of managers to be initialized defined?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.86,
+      "ttft": 0.36,
+      "token_count": 10,
+      "token_rate": 19.8,
+      "response_length": 146
+    },
+    "vector_search_time": 0.55,
+    "total_time": 1.42,
+    "context_length": 29560,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 29560,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 2.94,
+    "ttft": 0.38,
+    "token_count": 43,
+    "token_rate": 16.8,
+    "response_length": 727
+  },
+  "total_time": 4.41
+}

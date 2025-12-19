@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-12-18T16:56:52.182780",
+  "user_id": "36a21440-d039-472c-b720-c2073b254e04",
+  "query": "summarise this file",
+  "cleaned_query": "summarise this file",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityStorm.cs"
+  ],
+  "context_retrieval": {
+    "source": "redis_cache",
+    "context_length": 0
+  },
+  "answer_generation": {
+    "total_time": 1.71,
+    "ttft": 1.54,
+    "token_count": 6,
+    "token_rate": 35.0,
+    "response_length": 51
+  },
+  "total_time": 1.71
+}

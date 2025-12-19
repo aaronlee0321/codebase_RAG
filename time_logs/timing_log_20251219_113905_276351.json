@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-12-19T11:38:57.632293",
+  "user_id": "c57713bd-c2bc-413b-8214-dc3b6926eace",
+  "query": "@DatabaseManager.cs @GameDatabase.cs @AbilityBase.cs @AbilityBearTrap.cs @AbilityFireDash.cs @AbilityHook.cs @AbilityKamikaze.cs @AbilityManager.cs @AbilityStorm.cs @AbilityWhirlwindChains.cs @AnalyticsManager.cs @APIHandler.cs ",
+  "cleaned_query": "@GameDatabase.cs @AbilityBase.cs @AbilityBearTrap.cs @AbilityFireDash.cs @AbilityHook.cs @AbilityKamikaze.cs @AbilityManager.cs @AbilityStorm.cs @AbilityWhirlwindChains.cs @AnalyticsManager.cs @APIHandler.cs",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameData\\Scripts\\DatabaseManager.cs",
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameData\\Scripts\\GameDatabase.cs",
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityBase.cs",
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityBearTrap.cs",
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityFireDash.cs",
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityHook.cs",
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityKamikaze.cs",
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityManager.cs",
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityStorm.cs",
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityWhirlwindChains.cs",
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\FirebaseModule\\Scripts\\AnalyticsManager.cs",
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\APIModule\\Scripts\\APIHandler.cs"
+  ],
+  "context_retrieval": {
+    "query": "@GameDatabase.cs @AbilityBase.cs @AbilityBearTrap.cs @AbilityFireDash.cs @AbilityHook.cs @AbilityKamikaze.cs @AbilityManager.cs @AbilityStorm.cs @AbilityWhirlwindChains.cs @AnalyticsManager.cs @APIHandler.cs",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.94,
+      "ttft": 0.43,
+      "token_count": 21,
+      "token_rate": 13.9,
+      "response_length": 439
+    },
+    "vector_search_time": 2.46,
+    "total_time": 4.41,
+    "context_length": 23077,
+    "results_count": {
+      "methods": 19,
+      "classes": 11
+    }
+  },
+  "context_truncated": {
+    "original_length": 23077,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 3.18,
+    "ttft": 0.36,
+    "token_count": 53,
+    "token_rate": 18.7,
+    "response_length": 849
+  },
+  "total_time": 7.64
+}

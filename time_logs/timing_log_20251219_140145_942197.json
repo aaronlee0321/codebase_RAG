@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T14:01:29.350411",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@ECProjectile.cs code review",
+  "cleaned_query": "code review",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\packs\\WebDemoAssets\\scripts\\ECProjectile.cs"
+  ],
+  "context_retrieval": {
+    "query": "code review",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.84,
+      "ttft": 0.37,
+      "token_count": 6,
+      "token_rate": 12.8,
+      "response_length": 74
+    },
+    "vector_search_time": 1.62,
+    "total_time": 2.76,
+    "context_length": 4805,
+    "results_count": {
+      "methods": 4,
+      "classes": 1
+    }
+  },
+  "answer_generation": {
+    "total_time": 13.72,
+    "ttft": 0.35,
+    "token_count": 276,
+    "token_rate": 20.6,
+    "response_length": 4920
+  },
+  "total_time": 16.6
+}

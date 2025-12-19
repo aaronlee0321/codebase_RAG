@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T16:58:07.668025",
+  "user_id": "36a21440-d039-472c-b720-c2073b254e04",
+  "query": "@codebase summarise Home Screen",
+  "cleaned_query": "@codebase summarise Home Screen",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameUI\\MainScreen\\Scripts\\HomeScreen.cs"
+  ],
+  "context_retrieval": {
+    "query": "summarise Home Screen",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.58,
+      "ttft": 0.27,
+      "token_count": 6,
+      "token_rate": 19.5,
+      "response_length": 73
+    },
+    "vector_search_time": 0.8,
+    "total_time": 1.38,
+    "context_length": 46,
+    "results_count": {
+      "methods": 0,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.41,
+    "ttft": 0.22,
+    "token_count": 6,
+    "token_rate": 31.5,
+    "response_length": 51
+  },
+  "total_time": 1.79
+}

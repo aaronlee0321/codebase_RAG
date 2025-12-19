@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T16:08:04.958806",
+  "user_id": "ee75d610-89a9-4f34-8af8-52e33ebe2ce5",
+  "query": "@MuzzleFlash.cs what does OnFire() do",
+  "cleaned_query": "what does OnFire() do",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Effects\\MuzzleFlash.cs"
+  ],
+  "context_retrieval": {
+    "query": "what does OnFire() do",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.53,
+      "ttft": 0.25,
+      "token_count": 7,
+      "token_rate": 25.3,
+      "response_length": 67
+    },
+    "vector_search_time": 0.73,
+    "total_time": 1.26,
+    "context_length": 865,
+    "results_count": {
+      "methods": 1,
+      "classes": 1
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.8,
+    "ttft": 0.32,
+    "token_count": 13,
+    "token_rate": 27.0,
+    "response_length": 159
+  },
+  "total_time": 2.07
+}

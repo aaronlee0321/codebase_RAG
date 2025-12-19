@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T09:31:32.195239",
+  "user_id": "7829e15e-febf-4e7d-8d32-2a217a72736e",
+  "query": "@SceneLoader.cs what is the log message for ReloadCurrentScene?",
+  "cleaned_query": "@SceneLoader.cs what is the log message for ReloadCurrentScene?",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GamePlay\\Scripts\\SceneLoader.cs"
+  ],
+  "context_retrieval": {
+    "query": "@SceneLoader.cs what is the log message for ReloadCurrentScene?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.57,
+      "ttft": 0.31,
+      "token_count": 6,
+      "token_rate": 23.0,
+      "response_length": 69
+    },
+    "vector_search_time": 0.82,
+    "total_time": 1.39,
+    "context_length": 2085,
+    "results_count": {
+      "methods": 2,
+      "classes": 1
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.99,
+    "ttft": 0.27,
+    "token_count": 18,
+    "token_rate": 25.1,
+    "response_length": 219
+  },
+  "total_time": 2.37
+}

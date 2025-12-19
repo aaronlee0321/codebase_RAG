@@ -197,6 +197,114 @@
             }
         }
 
+        /* Layout: sidebar + chat */
+        .layout {
+            display: flex;
+            gap: 16px;
+            height: calc(100vh - 160px);
+        }
+
+        .sidebar {
+            width: 260px;
+            min-width: 220px;
+            border: 2px solid #333;
+            background-color: #fff;
+            box-shadow: 4px 4px 0 #333;
+            padding: 10px;
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            margin: 0 0 8px 0;
+            font-size: 1rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid #333;
+            padding-bottom: 4px;
+        }
+
+        .file-list {
+            list-style: none;
+            padding: 0;
+            margin: 4px 0 0 0;
+            font-size: 0.85rem;
+        }
+
+        .file-item {
+            padding: 3px 0;
+            border-bottom: 1px dotted #ddd;
+        }
+
+        .file-item label {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .file-item input[type="checkbox"] {
+            margin: 0;
+        }
+
+        .file-item .name {
+            word-break: break-all;
+        }
+
+        .file-item .path {
+            display: none; /* hide noisy absolute path text */
+        }
+
+        /* Folder/collapsible styles */
+        .folder {
+            margin: 4px 0;
+        }
+
+        .folder-header {
+            cursor: pointer;
+            padding: 4px 0;
+            font-weight: bold;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .folder-header:hover {
+            background-color: #f0f0f0;
+        }
+
+        .folder-icon {
+            display: inline-block;
+            width: 12px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        .folder-icon::before {
+            content: '▶';
+        }
+
+        .folder.expanded .folder-icon::before {
+            content: '▼';
+        }
+
+        .folder-content {
+            display: none;
+            margin-left: 16px;
+            margin-top: 4px;
+        }
+
+        .folder.expanded .folder-content {
+            display: block;
+        }
+
+        .main-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
         /* Responsive design */
         @media (max-width: 1240px) {
             .container {
@@ -222,6 +330,43 @@
 <body>
     <h1>CodeQA</h1>
     <div class="container">
+        <div class="layout">
+            <div class="sidebar">
+                <h2>Indexed C# Files</h2>
+                <p style="font-size:0.8rem;margin:4px 0 8px 0;">
+                    Select one or more files to scope your question to those files.
+                </p>
+                {% if files_by_folder %}
+                    <div class="file-list">
+                        {% for folder_name in files_by_folder.keys()|sort %}
+                            <div class="folder expanded" data-folder="{{ folder_name }}">
+                                <div class="folder-header">
+                                    <span class="folder-icon"></span>
+                                    <span>{{ folder_name }}</span>
+                                </div>
+                                <ul class="folder-content">
+                                    {% for f in files_by_folder[folder_name] %}
+                                        <li class="file-item" title="{{ f.absolute_path }}">
+                                            <label>
+                                                <input type="checkbox"
+                                                       class="file-check"
+                                                       data-path="{{ f.absolute_path }}"
+                                                       data-filename="{{ f.file_name }}">
+                                                <span class="name">{{ f.file_name }}</span>
+                                                <span class="path">{{ f.absolute_path }}</span>
+                                            </label>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <p>No indexed C# files found.</p>
+                {% endif %}
+            </div>
+
+            <div class="main-panel">
         <div class="chat-container" id="chat-container">
             {% if results %}
                 {% for interaction in results.responses %}
@@ -238,6 +383,9 @@
                 </div>
             {% endif %}
         </div>
+            </div>
+        </div>
+
         <div class="input-area">
             <form id="chat-form">
                 <input type="text" id="query" name="query" placeholder="Type your message..." required>
@@ -253,9 +401,80 @@
     <!-- Include marked.js for Markdown rendering -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
+        const queryInput = document.getElementById('query');
+        const fileCheckboxes = Array.from(document.querySelectorAll('.file-check'));
+
+        // Folder collapse/expand functionality
+        document.querySelectorAll('.folder-header').forEach(function(header) {
+            header.addEventListener('click', function() {
+                const folder = this.parentElement;
+                folder.classList.toggle('expanded');
+            });
+        });
+
+        // Helper: get selected file paths from checkboxes
+        function getSelectedFilesArray() {
+            return fileCheckboxes
+                .filter(cb => cb.checked)
+                .map(cb => cb.getAttribute('data-path'))
+                .filter(Boolean);
+        }
+
+        // Helper: ensure a tag like @FileName.cs exists in the input
+        function addTagForCheckbox(checkbox) {
+            const filename = checkbox.getAttribute('data-filename');
+            if (!filename) return;
+            const tag = '@' + filename;
+            const current = queryInput.value;
+            if (current.includes(tag)) return;
+
+            const trimmed = current.trim();
+            queryInput.value = (trimmed ? trimmed + ' ' : '') + tag + ' ';
+        }
+
+        // Helper: remove a tag like @FileName.cs from the input
+        function removeTagForCheckbox(checkbox) {
+            const filename = checkbox.getAttribute('data-filename');
+            if (!filename) return;
+            const escaped = filename.replace('.', '\\.');
+            const tagRegex = new RegExp('@' + escaped + '\\b', 'g');
+            queryInput.value = queryInput.value
+                .replace(tagRegex, '')
+                .replace(/\s+/g, ' ')
+                .trim() + (queryInput.value.trim() ? ' ' : '');
+        }
+
+        // When user clicks a checkbox, sync the tags in the textbox
+        fileCheckboxes.forEach(function (checkbox) {
+            checkbox.addEventListener('change', function () {
+                if (this.checked) {
+                    addTagForCheckbox(this);
+                } else {
+                    removeTagForCheckbox(this);
+                }
+            });
+        });
+
+        // When user types, sync checkboxes based on @FileName.cs tags
+        function syncCheckboxesFromInput() {
+            const text = queryInput.value;
+            const tagRegex = /@([A-Za-z0-9_\.]+\.cs)\b/g;
+            const tags = new Set();
+            let match;
+            while ((match = tagRegex.exec(text)) !== null) {
+                tags.add(match[1]);
+            }
+
+            fileCheckboxes.forEach(function (checkbox) {
+                const filename = checkbox.getAttribute('data-filename');
+                checkbox.checked = filename && tags.has(filename);
+            });
+        }
+
+        queryInput.addEventListener('input', syncCheckboxesFromInput);
+
         document.getElementById('chat-form').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the form from submitting normally
-            const queryInput = document.getElementById('query');
             const query = queryInput.value;
             if (query.trim() === '') {
                 return;
@@ -293,7 +512,11 @@
                     'Content-Type': 'application/json',
                     'X-Requested-With': 'XMLHttpRequest'  // Indicate AJAX request
                 },
-                body: JSON.stringify({query: query, rerank: rerank})
+                body: JSON.stringify({
+                    query: query,
+                    rerank: rerank,
+                    selected_files: getSelectedFilesArray()
+                })
             })
             .then(response => response.json())
             .then(data => {

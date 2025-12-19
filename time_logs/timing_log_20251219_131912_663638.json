@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T13:19:11.284695",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@AudioHelper.cs first variable",
+  "cleaned_query": "first variable",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\AudioModule\\Scripts\\AudioHelper.cs"
+  ],
+  "context_retrieval": {
+    "query": "first variable",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.32,
+      "ttft": 0.28,
+      "token_count": 2,
+      "token_rate": 43.8,
+      "response_length": 14
+    },
+    "vector_search_time": 0.61,
+    "total_time": 0.93,
+    "context_length": 46,
+    "results_count": {
+      "methods": 0,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.44,
+    "ttft": 0.25,
+    "token_count": 6,
+    "token_rate": 30.5,
+    "response_length": 51
+  },
+  "total_time": 1.38
+}

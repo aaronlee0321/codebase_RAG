@@ -27,7 +27,7 @@ BLACKLIST_DIR = [
     ".aws-sam",
     ".terraform"
 ]
-WHITELIST_FILES = [".java", ".py", ".js", ".rs"]
+WHITELIST_FILES = [".cs"]  # Only index C# files for this Unity codebase
 BLACKLIST_FILES = ["docker-compose.yml"]
 
 NODE_TYPES = {
@@ -46,6 +46,10 @@ NODE_TYPES = {
     "javascript": {
         "class": "class_declaration",
         "method": "method_definition"
+    },
+    "csharp": {
+        "class": "class_declaration",
+        "method": "method_declaration"
     },
     # Add other languages as needed
 }
@@ -71,6 +75,11 @@ REFERENCE_IDENTIFIERS = {
         "method": "call_expression",
         "child_field_name": "function"
     },
+    "csharp": {
+        "class": "identifier",
+        "method": "invocation_expression",
+        "child_field_name": "expression"
+    },
     # Add other languages as needed
 }
 
@@ -80,6 +89,7 @@ def get_language_from_extension(file_ext):
         ".py": LanguageEnum.PYTHON,
         ".js": LanguageEnum.JAVASCRIPT,
         ".rs": LanguageEnum.RUST,
+        ".cs": LanguageEnum.CSHARP,
         # Add other extensions and languages as needed
     }
     return FILE_EXTENSION_LANGUAGE_MAP.get(file_ext)

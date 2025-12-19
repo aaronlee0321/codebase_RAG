@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T15:34:46.004943",
+  "user_id": "ad2854a4-b1d7-450f-ab26-bec326913cc2",
+  "query": "@codebase Is there any implemented logic that unloads or cleans up managers after they are initialized or when the application quits?",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "Is there any implemented logic that unloads or cleans up managers after they are initialized or when the application quits?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.12,
+      "ttft": 0.3,
+      "token_count": 12,
+      "token_rate": 14.6,
+      "response_length": 242
+    },
+    "vector_search_time": 0.94,
+    "total_time": 2.06,
+    "context_length": 30216,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 30216,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 1.8,
+    "ttft": 0.3,
+    "token_count": 28,
+    "token_rate": 18.8,
+    "response_length": 513
+  },
+  "total_time": 3.9
+}

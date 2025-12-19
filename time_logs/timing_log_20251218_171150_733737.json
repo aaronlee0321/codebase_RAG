@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T17:11:49.014834",
+  "user_id": "85aac054-8ae4-4265-8d45-880d72bc6db0",
+  "query": " @FinalState.cs what are some of the variables used",
+  "cleaned_query": " @FinalState.cs what are some of the variables used",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\GameStateMachineModule\\States\\FinalState.cs"
+  ],
+  "context_retrieval": {
+    "query": "@FinalState.cs what are some of the variables used",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.52,
+      "ttft": 0.27,
+      "token_count": 6,
+      "token_rate": 24.8,
+      "response_length": 73
+    },
+    "vector_search_time": 0.82,
+    "total_time": 1.33,
+    "context_length": 266,
+    "results_count": {
+      "methods": 1,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.38,
+    "ttft": 0.24,
+    "token_count": 6,
+    "token_rate": 40.7,
+    "response_length": 51
+  },
+  "total_time": 1.72
+}

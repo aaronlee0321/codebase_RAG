@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T11:00:16.542049",
+  "user_id": "7a999826-93cf-4623-a508-e3f11deaa9f7",
+  "query": "@ECdestroyMe.cs what does this class do",
+  "cleaned_query": "what does this class do",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\scripts\\ECdestroyMe.cs"
+  ],
+  "context_retrieval": {
+    "query": "what does this class do",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.05,
+      "ttft": 0.46,
+      "token_count": 10,
+      "token_rate": 17.0,
+      "response_length": 163
+    },
+    "vector_search_time": 10.11,
+    "total_time": 11.18,
+    "context_length": 861,
+    "results_count": {
+      "methods": 1,
+      "classes": 1
+    }
+  },
+  "answer_generation": {
+    "total_time": 1.43,
+    "ttft": 0.31,
+    "token_count": 22,
+    "token_rate": 19.6,
+    "response_length": 361
+  },
+  "total_time": 12.66
+}

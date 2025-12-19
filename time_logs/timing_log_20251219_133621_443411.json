@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-12-19T13:36:12.055890",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@ECprojectileActor.cs summarize this ",
+  "cleaned_query": "summarize this",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\packs\\WebDemoAssets\\scripts\\ECprojectileActor.cs"
+  ],
+  "context_retrieval": {
+    "query": "summarize this",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.02,
+      "ttft": 0.42,
+      "token_count": 10,
+      "token_rate": 16.8,
+      "response_length": 161
+    },
+    "vector_search_time": 3.46,
+    "total_time": 4.48,
+    "context_length": 10924,
+    "results_count": {
+      "methods": 4,
+      "classes": 2
+    }
+  },
+  "context_truncated": {
+    "original_length": 10924,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 4.86,
+    "ttft": 0.48,
+    "token_count": 77,
+    "token_rate": 17.6,
+    "response_length": 1418
+  },
+  "total_time": 9.39
+}

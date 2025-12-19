@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T15:03:47.642541",
+  "user_id": "9526727e-233c-46b5-9580-d066cd9ec2d2",
+  "query": "@codebase Is there any direct reference in the code that maps a specific GamePhase to a specific scene load operation?",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "Is there any direct reference in the code that maps a specific GamePhase to a specific scene load operation?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 2.26,
+      "ttft": 0.41,
+      "token_count": 24,
+      "token_rate": 13.0,
+      "response_length": 467
+    },
+    "vector_search_time": 1.07,
+    "total_time": 3.34,
+    "context_length": 29261,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 29261,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 4.58,
+    "ttft": 0.41,
+    "token_count": 79,
+    "token_rate": 18.9,
+    "response_length": 1365
+  },
+  "total_time": 7.97
+}

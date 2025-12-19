@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T10:52:36.966953",
+  "user_id": "f1dea1e3-1aca-487a-9c29-040390fb53bc",
+  "query": "@GameDatabase.cs what does GetCollection() return",
+  "cleaned_query": "what does GetCollection() return",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameData\\Scripts\\GameDatabase.cs"
+  ],
+  "context_retrieval": {
+    "query": "what does GetCollection() return",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.71,
+      "ttft": 0.38,
+      "token_count": 6,
+      "token_rate": 18.2,
+      "response_length": 83
+    },
+    "vector_search_time": 2.2,
+    "total_time": 2.91,
+    "context_length": 7351,
+    "results_count": {
+      "methods": 4,
+      "classes": 1
+    }
+  },
+  "answer_generation": {
+    "total_time": 2.77,
+    "ttft": 0.32,
+    "token_count": 47,
+    "token_rate": 19.1,
+    "response_length": 788
+  },
+  "total_time": 5.74
+}

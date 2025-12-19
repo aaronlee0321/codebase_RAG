@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-12-19T10:40:08.061925",
+  "user_id": "9e0eb3a8-bea0-4621-8f36-2ee540fa10c7",
+  "query": "@DatabaseManager.cs what are the methods ",
+  "cleaned_query": "what are the methods",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameData\\Scripts\\DatabaseManager.cs"
+  ],
+  "context_retrieval": {
+    "query": "what are the methods",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.94,
+      "ttft": 0.37,
+      "token_count": 6,
+      "token_rate": 10.5,
+      "response_length": 68
+    },
+    "vector_search_time": 1.5,
+    "total_time": 2.45,
+    "context_length": 9940,
+    "results_count": {
+      "methods": 4,
+      "classes": 1
+    }
+  },
+  "context_truncated": {
+    "original_length": 9940,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 5.81,
+    "ttft": 0.37,
+    "token_count": 102,
+    "token_rate": 18.7,
+    "response_length": 1821
+  },
+  "total_time": 8.31
+}

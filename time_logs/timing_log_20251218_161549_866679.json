@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-12-18T16:15:49.383710",
+  "user_id": "61467d6a-905c-44d0-a7d1-fcc65c43c922",
+  "query": "@tell me the behaviour of UIManager",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "source": "redis_cache",
+    "context_length": 0
+  },
+  "answer_generation": {
+    "total_time": 0.48,
+    "ttft": 0.3,
+    "token_count": 6,
+    "token_rate": 32.1,
+    "response_length": 51
+  },
+  "total_time": 0.48
+}

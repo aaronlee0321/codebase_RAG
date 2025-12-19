@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-12-18T16:09:06.823789",
+  "user_id": "61467d6a-905c-44d0-a7d1-fcc65c43c922",
+  "query": "summarise player class for me ",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "source": "redis_cache",
+    "context_length": 0
+  },
+  "answer_generation": {
+    "total_time": 0.54,
+    "ttft": 0.31,
+    "token_count": 6,
+    "token_rate": 27.0,
+    "response_length": 51
+  },
+  "total_time": 0.54
+}

@@ -1,6 +1,11 @@
 from abc import ABC
-from tree_sitter import Language, Parser
+from tree_sitter import Language, Parser, Query, QueryCursor
 from tree_sitter_languages import get_language, get_parser
+try:
+    from tree_sitter_language_pack import get_language as get_language_pack, get_parser as get_parser_pack
+    LANGUAGE_PACK_AVAILABLE = True
+except ImportError:
+    LANGUAGE_PACK_AVAILABLE = False
 from enum import Enum
 import logging
 
@@ -11,6 +16,7 @@ class LanguageEnum(Enum):
     PYTHON = "python"
     RUST = "rust"
     JAVASCRIPT = "javascript"
+    CSHARP = "csharp"
     UNKNOWN = "unknown"
 
 LANGUAGE_QUERIES = {
@@ -74,6 +80,23 @@ LANGUAGE_QUERIES = {
             ((comment) @comment)
         """
     },
+    LanguageEnum.CSHARP: {
+        'class_query': """
+            (class_declaration
+                name: (identifier) @class.name)
+        """,
+        'method_query': """
+            [
+                (method_declaration
+                    name: (identifier) @method.name)
+                (constructor_declaration
+                    name: (identifier) @method.name)
+            ]
+        """,
+        'doc_query': """
+            ((comment) @comment)
+        """
+    },
     # Add other languages as needed
 }
 
@@ -107,20 +130,55 @@ class TreesitterClassNode:
 class Treesitter(ABC):
     def __init__(self, language: LanguageEnum):
         self.language_enum = language
-        self.parser = get_parser(language.value)
-        self.language_obj = get_language(language.value)
+        
+        # Use language pack for C# (csharp), otherwise use tree_sitter_languages
+        if language == LanguageEnum.CSHARP and LANGUAGE_PACK_AVAILABLE:
+            language_name = "csharp"  # language pack uses "csharp"
+            self.parser = get_parser_pack(language_name)
+            self.language_obj = get_language_pack(language_name)
+        else:
+            self.parser = get_parser(language.value)
+            self.language_obj = get_language(language.value)
+        
         self.query_config = LANGUAGE_QUERIES.get(language)
         if not self.query_config:
             raise ValueError(f"Unsupported language: {language}")
 
-        # Corrected query instantiation
-        self.class_query = self.language_obj.query(self.query_config['class_query'])
-        self.method_query = self.language_obj.query(self.query_config['method_query'])
-        self.doc_query = self.language_obj.query(self.query_config['doc_query'])
+        # Corrected query instantiation - use Query constructor for newer tree-sitter versions
+        try:
+            # Try new API first (tree-sitter >= 0.25)
+            self.class_query = Query(self.language_obj, self.query_config['class_query'])
+            self.method_query = Query(self.language_obj, self.query_config['method_query'])
+            self.doc_query = Query(self.language_obj, self.query_config['doc_query'])
+        except (TypeError, AttributeError):
+            # Fall back to old API (tree-sitter < 0.25)
+            self.class_query = self.language_obj.query(self.query_config['class_query'])
+            self.method_query = self.language_obj.query(self.query_config['method_query'])
+            self.doc_query = self.language_obj.query(self.query_config['doc_query'])
 
     @staticmethod
     def create_treesitter(language: LanguageEnum) -> "Treesitter":
         return Treesitter(language)
+
+    def _get_captures(self, query, node):
+        """Helper method to get captures in a normalized format (list of tuples)."""
+        try:
+            # Try new API first (tree-sitter >= 0.25) - returns dict
+            cursor = QueryCursor(query)
+            captures_dict = cursor.captures(node)
+            # Convert dict to list of tuples
+            result = []
+            for capture_name, nodes in captures_dict.items():
+                for node in nodes:
+                    result.append((node, capture_name))
+            return result
+        except (AttributeError, TypeError):
+            # Fall back to old API - returns list of tuples directly
+            try:
+                return query.captures(node)
+            except AttributeError:
+                # If captures doesn't exist, try matches
+                return query.matches(node)
 
     def parse(self, file_bytes: bytes) -> tuple[list[TreesitterClassNode], list[TreesitterMethodNode]]:
         tree = self.parser.parse(file_bytes)
@@ -130,7 +188,7 @@ class Treesitter(ABC):
         method_results = []
 
         class_name_by_node = {}
-        class_captures = self.class_query.captures(root_node)
+        class_captures = self._get_captures(self.class_query, root_node)
         class_nodes = []
         for node, capture_name in class_captures:
             if capture_name == 'class.name':
@@ -142,7 +200,7 @@ class Treesitter(ABC):
                 class_results.append(TreesitterClassNode(class_name, method_declarations, class_node))
                 class_nodes.append(class_node)
 
-        method_captures = self.method_query.captures(root_node)
+        method_captures = self._get_captures(self.method_query, root_node)
         for node, capture_name in method_captures:
             if capture_name in ['method.name', 'function.name']:
                 method_name = node.text.decode()
@@ -167,7 +225,7 @@ class Treesitter(ABC):
     def _extract_methods_in_class(self, class_node):
         method_declarations = []
         # Apply method_query to the class_node
-        method_captures = self.method_query.captures(class_node)
+        method_captures = self._get_captures(self.method_query, class_node)
         for node, capture_name in method_captures:
             if capture_name in ['method.name', 'function.name']:
                 method_declaration = node.parent.text.decode()
@@ -179,7 +237,7 @@ class Treesitter(ABC):
         doc_comment = ''
         current_node = node.prev_sibling
         while current_node:
-            captures = self.doc_query.captures(current_node)
+            captures = self._get_captures(self.doc_query, current_node)
             if captures:
                 for cap_node, cap_name in captures:
                     if cap_name == 'comment':

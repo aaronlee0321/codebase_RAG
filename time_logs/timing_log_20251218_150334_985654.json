@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T15:03:29.473141",
+  "user_id": "d8f8574a-cf03-4bb4-a41b-b8069a53a2f9",
+  "query": "@codebase How does debug behavior differ between the Unity Editor and non-editor builds?",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "How does debug behavior differ between the Unity Editor and non-editor builds?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.23,
+      "ttft": 0.51,
+      "token_count": 11,
+      "token_rate": 15.3,
+      "response_length": 216
+    },
+    "vector_search_time": 0.67,
+    "total_time": 1.89,
+    "context_length": 19073,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 19073,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 3.57,
+    "ttft": 0.37,
+    "token_count": 63,
+    "token_rate": 19.7,
+    "response_length": 1076
+  },
+  "total_time": 5.51
+}

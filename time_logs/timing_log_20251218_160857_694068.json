@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-12-18T16:08:55.336076",
+  "user_id": "61467d6a-905c-44d0-a7d1-fcc65c43c922",
+  "query": "list out all the classes you have ",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "source": "redis_cache",
+    "context_length": 0
+  },
+  "answer_generation": {
+    "total_time": 2.35,
+    "ttft": 0.89,
+    "token_count": 26,
+    "token_rate": 17.8,
+    "response_length": 321
+  },
+  "total_time": 2.36
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T15:03:01.579357",
+  "user_id": "e91c11a1-1678-4d4e-bc00-f75974ea5bc1",
+  "query": "@codebase Where are player-related keys such as user ID, role ID, and player name defined, and what are they derived from?",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "Where are player-related keys such as user ID, role ID, and player name defined, and what are they derived from?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.21,
+      "ttft": 0.41,
+      "token_count": 14,
+      "token_rate": 17.5,
+      "response_length": 240
+    },
+    "vector_search_time": 0.69,
+    "total_time": 1.9,
+    "context_length": 14158,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 14158,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 7.41,
+    "ttft": 0.33,
+    "token_count": 109,
+    "token_rate": 15.4,
+    "response_length": 1806
+  },
+  "total_time": 9.36
+}

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-12-19T15:54:45.429891",
+  "user_id": "a5192cb2-3a08-4c34-a0f6-bbda7db9965a",
+  "query": "@AbilityFireDash.cs summarize this ",
+  "cleaned_query": "summarize this",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityFireDash.cs"
+  ],
+  "context_retrieval": {
+    "query": "summarize this",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.54,
+      "ttft": 0.45,
+      "token_count": 18,
+      "token_rate": 16.6,
+      "response_length": 320
+    },
+    "vector_search_time": 0.77,
+    "total_time": 2.32,
+    "context_length": 12150,
+    "results_count": {
+      "methods": 2,
+      "classes": 2
+    }
+  },
+  "context_truncated": {
+    "original_length": 12150,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 4.35,
+    "ttft": 0.41,
+    "token_count": 83,
+    "token_rate": 21.1,
+    "response_length": 1584
+  },
+  "total_time": 6.72
+}

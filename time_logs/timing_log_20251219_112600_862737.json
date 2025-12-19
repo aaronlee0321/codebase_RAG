@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T11:25:41.271234",
+  "user_id": "e93c5da0-9dc8-49a0-b03d-e8da41cebbed",
+  "query": "@ECCameraShakeProjectile.cs what is this file for ",
+  "cleaned_query": "what is this file for",
+  "rerank_enabled": true,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\packs\\WebDemoAssets\\scripts\\ECCameraShakeProjectile.cs"
+  ],
+  "context_retrieval": {
+    "query": "what is this file for",
+    "rerank_enabled": true,
+    "hyde_v2_generation": {
+      "total_time": 0.81,
+      "ttft": 0.3,
+      "token_count": 10,
+      "token_rate": 19.4,
+      "response_length": 129
+    },
+    "vector_search_time": 16.88,
+    "total_time": 17.73,
+    "context_length": 949,
+    "results_count": {
+      "methods": 1,
+      "classes": 1
+    }
+  },
+  "answer_generation": {
+    "total_time": 1.85,
+    "ttft": 0.36,
+    "token_count": 34,
+    "token_rate": 22.9,
+    "response_length": 568
+  },
+  "total_time": 19.59
+}

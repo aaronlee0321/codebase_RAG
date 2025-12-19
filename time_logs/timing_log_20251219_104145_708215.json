@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-12-19T10:41:41.350409",
+  "user_id": "9e0eb3a8-bea0-4621-8f36-2ee540fa10c7",
+  "query": "@DatabaseManager.cs are there any static methods defined if so how many",
+  "cleaned_query": "are there any static methods defined if so how many",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameData\\Scripts\\DatabaseManager.cs"
+  ],
+  "context_retrieval": {
+    "query": "are there any static methods defined if so how many",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.64,
+      "ttft": 0.39,
+      "token_count": 6,
+      "token_rate": 24.2,
+      "response_length": 87
+    },
+    "vector_search_time": 1.47,
+    "total_time": 2.12,
+    "context_length": 9940,
+    "results_count": {
+      "methods": 6,
+      "classes": 1
+    }
+  },
+  "context_truncated": {
+    "original_length": 9940,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 2.19,
+    "ttft": 0.29,
+    "token_count": 39,
+    "token_rate": 20.6,
+    "response_length": 599
+  },
+  "total_time": 4.36
+}

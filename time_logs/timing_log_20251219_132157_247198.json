@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T13:21:55.547708",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@AutoAnchorWindow.cs first variable defined",
+  "cleaned_query": "first variable defined",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Editor\\AutoAnchorWindow.cs"
+  ],
+  "context_retrieval": {
+    "query": "first variable defined",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.36,
+      "ttft": 0.27,
+      "token_count": 3,
+      "token_rate": 35.2,
+      "response_length": 37
+    },
+    "vector_search_time": 0.79,
+    "total_time": 1.15,
+    "context_length": 46,
+    "results_count": {
+      "methods": 0,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.55,
+    "ttft": 0.28,
+    "token_count": 7,
+    "token_rate": 25.9,
+    "response_length": 83
+  },
+  "total_time": 1.7
+}

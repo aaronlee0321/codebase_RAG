@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T11:12:04.058822",
+  "user_id": "6fc1e69c-299c-40bf-aa80-c9cd39ae1ea1",
+  "query": "@IInitializableManager.cs can show me how many function and class",
+  "cleaned_query": "can show me how many function and class",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GamePlay\\Scripts\\IInitializableManager.cs"
+  ],
+  "context_retrieval": {
+    "query": "can show me how many function and class",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.54,
+      "ttft": 0.28,
+      "token_count": 6,
+      "token_rate": 24.0,
+      "response_length": 71
+    },
+    "vector_search_time": 0.76,
+    "total_time": 1.3,
+    "context_length": 205,
+    "results_count": {
+      "methods": 1,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.9,
+    "ttft": 0.29,
+    "token_count": 13,
+    "token_rate": 21.2,
+    "response_length": 164
+  },
+  "total_time": 2.21
+}

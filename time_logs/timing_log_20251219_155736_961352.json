@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T15:57:34.049493",
+  "user_id": "a5192cb2-3a08-4c34-a0f6-bbda7db9965a",
+  "query": "@TankWeaponCollection.cs what is the log warning of both methods",
+  "cleaned_query": "what is the log warning of both methods",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\TankWeaponCollection.cs"
+  ],
+  "context_retrieval": {
+    "query": "what is the log warning of both methods",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.81,
+      "ttft": 0.34,
+      "token_count": 9,
+      "token_rate": 19.1,
+      "response_length": 138
+    },
+    "vector_search_time": 0.77,
+    "total_time": 1.59,
+    "context_length": 2876,
+    "results_count": {
+      "methods": 2,
+      "classes": 1
+    }
+  },
+  "answer_generation": {
+    "total_time": 1.32,
+    "ttft": 0.29,
+    "token_count": 26,
+    "token_rate": 25.2,
+    "response_length": 364
+  },
+  "total_time": 2.91
+}

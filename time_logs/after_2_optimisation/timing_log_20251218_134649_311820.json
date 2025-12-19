@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T13:46:04.868184",
+  "user_id": "ead94607-70f3-432a-ae08-b3cf7ffd8cd1",
+  "query": "@codebase How does the game transition between scenes (Loading, MainMenu, Lobby, GamePlay)? Show me the relevant code and explain the flow.",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "How does the game transition between scenes (Loading, MainMenu, Lobby, GamePlay)? Show me the relevant code and explain the flow.",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 2.19,
+      "ttft": 0.42,
+      "token_count": 25,
+      "token_rate": 14.2,
+      "response_length": 537
+    },
+    "vector_search_time": 0.75,
+    "total_time": 2.94,
+    "context_length": 28653,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 28653,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 41.45,
+    "ttft": 0.25,
+    "token_count": 335,
+    "token_rate": 8.1,
+    "response_length": 5370
+  },
+  "total_time": 44.44
+}

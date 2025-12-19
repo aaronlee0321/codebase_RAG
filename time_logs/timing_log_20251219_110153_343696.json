@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T11:01:47.658987",
+  "user_id": "7a999826-93cf-4623-a508-e3f11deaa9f7",
+  "query": "@ECCameraShake.cs summarise this ",
+  "cleaned_query": "summarise this",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_ExternalAssets\\EffectCore\\packs\\WebDemoAssets\\scripts\\ECCameraShake.cs"
+  ],
+  "context_retrieval": {
+    "query": "summarise this",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 1.14,
+      "ttft": 0.34,
+      "token_count": 12,
+      "token_rate": 15.2,
+      "response_length": 198
+    },
+    "vector_search_time": 1.53,
+    "total_time": 2.67,
+    "context_length": 2604,
+    "results_count": {
+      "methods": 3,
+      "classes": 1
+    }
+  },
+  "answer_generation": {
+    "total_time": 3.01,
+    "ttft": 0.3,
+    "token_count": 56,
+    "token_rate": 20.6,
+    "response_length": 1024
+  },
+  "total_time": 5.69
+}

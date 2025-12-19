@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T13:30:36.524218",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@BushArea.cs list out all the using lines",
+  "cleaned_query": "list out all the using lines",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\LevelDesign\\BushArea.cs"
+  ],
+  "context_retrieval": {
+    "query": "list out all the using lines",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.46,
+      "ttft": 0.3,
+      "token_count": 5,
+      "token_rate": 31.1,
+      "response_length": 38
+    },
+    "vector_search_time": 1.11,
+    "total_time": 1.59,
+    "context_length": 46,
+    "results_count": {
+      "methods": 0,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.57,
+    "ttft": 0.32,
+    "token_count": 6,
+    "token_rate": 24.2,
+    "response_length": 51
+  },
+  "total_time": 2.18
+}

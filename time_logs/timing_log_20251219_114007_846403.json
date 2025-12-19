@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T11:40:05.526080",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@KeepAlive.cs what are the methods in this file",
+  "cleaned_query": "what are the methods in this file",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\Utilities\\KeepAlive.cs"
+  ],
+  "context_retrieval": {
+    "query": "what are the methods in this file",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.61,
+      "ttft": 0.27,
+      "token_count": 7,
+      "token_rate": 20.6,
+      "response_length": 91
+    },
+    "vector_search_time": 0.98,
+    "total_time": 1.6,
+    "context_length": 46,
+    "results_count": {
+      "methods": 0,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.72,
+    "ttft": 0.22,
+    "token_count": 12,
+    "token_rate": 23.9,
+    "response_length": 102
+  },
+  "total_time": 2.32
+}

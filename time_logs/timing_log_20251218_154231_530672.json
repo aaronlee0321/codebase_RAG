@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T15:42:28.139462",
+  "user_id": "2b930c0b-b765-4969-b516-500e73d615c9",
+  "query": "@codebase How is the GameStateMachine updated every frame, and where does this update occur?",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "How is the GameStateMachine updated every frame, and where does this update occur?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.72,
+      "ttft": 0.37,
+      "token_count": 8,
+      "token_rate": 23.0,
+      "response_length": 122
+    },
+    "vector_search_time": 0.61,
+    "total_time": 1.33,
+    "context_length": 24569,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 24569,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 2.02,
+    "ttft": 0.33,
+    "token_count": 28,
+    "token_rate": 16.6,
+    "response_length": 388
+  },
+  "total_time": 3.39
+}

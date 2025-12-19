@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T13:32:05.902416",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@CameraBounds.cs summarize this file",
+  "cleaned_query": "summarize this file",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\CameraModule\\Scripts\\CameraBounds.cs"
+  ],
+  "context_retrieval": {
+    "query": "summarize this file",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.7,
+      "ttft": 0.23,
+      "token_count": 9,
+      "token_rate": 19.4,
+      "response_length": 150
+    },
+    "vector_search_time": 0.78,
+    "total_time": 1.48,
+    "context_length": 46,
+    "results_count": {
+      "methods": 0,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.42,
+    "ttft": 0.22,
+    "token_count": 6,
+    "token_rate": 29.0,
+    "response_length": 51
+  },
+  "total_time": 1.91
+}

@@ -2,12 +2,65 @@ import os
 import sys
 import pandas as pd
 import lancedb
-from lancedb.embeddings import EmbeddingFunctionRegistry
+from lancedb.embeddings import EmbeddingFunctionRegistry, TextEmbeddingFunction
 from lancedb.pydantic import LanceModel, Vector
 import tiktoken
 from dotenv import load_dotenv
 
 load_dotenv()
+
+# Custom Qwen embedding function using OpenAI-compatible API
+@EmbeddingFunctionRegistry.get_instance().register(alias="qwen")
+class QwenEmbeddingFunction(TextEmbeddingFunction):
+    def __init__(self, name: str = "text-embedding-v4", api_key: str = None, **kwargs):
+        # Get API key from environment
+        api_key = api_key or os.getenv("QWEN_API_KEY") or os.getenv("DASHSCOPE_API_KEY")
+        if not api_key:
+            raise ValueError("QWEN_API_KEY or DASHSCOPE_API_KEY environment variable must be set for Qwen embeddings")
+        
+        # Initialize with model name (this sets the Pydantic 'name' field)
+        super().__init__(name=name, **kwargs)
+        
+        # Store model name and API key as instance variables
+        self._model_name = name
+        self._api_key = api_key
+    
+        # Initialize OpenAI-compatible client with DashScope international base URL
+        from openai import OpenAI
+        # Use international endpoint (dashscope-intl) for better compatibility
+        self._client = OpenAI(
+            api_key=api_key,
+            base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
+        )
+    
+    def ndims(self) -> int:
+        # Qwen text-embedding-v4 has 1024 dimensions
+        # text-embedding-v3 has 1024 dimensions as well
+        return 1024
+    
+    def generate_embeddings(self, texts: list[str]) -> list[list[float]]:
+        """Generate embeddings for a list of texts using batching (max 10 per call)"""
+        try:
+            all_embeddings = []
+            batch_size = 10  # DashScope API limit
+
+            # Process in batches
+            for i in range(0, len(texts), batch_size):
+                batch = texts[i:i + batch_size]
+                response = self._client.embeddings.create(
+                    model=self._model_name,  # Use stored model name
+                    input=batch,
+                    dimensions=1024,  # Qwen text-embedding-v4 dimensions
+                    encoding_format="float",  # Return float format
+                )
+
+                # Extract embeddings from response
+                batch_embeddings = [item.embedding for item in response.data]
+                all_embeddings.extend(batch_embeddings)
+            
+            return all_embeddings
+        except Exception as e:
+            raise Exception(f"Error generating Qwen embeddings: {e}")
 
 def get_name_and_input_dir(codebase_path):
     # Normalize and get the absolute path
@@ -55,7 +108,61 @@ def create_markdown_dataframe(markdown_contents):
 
 
 # Check for environment variables and select embedding model
-if os.getenv("JINA_API_KEY"):
+DEFAULT_EMBEDDING_MODEL = os.getenv("DEFAULT_EMBEDDING_MODEL")
+EMBEDDING_PROVIDER = os.getenv("EMBEDDING_PROVIDER", "").lower()  # e.g., "openai", "jina", "cohere", "qwen", etc.
+
+if DEFAULT_EMBEDDING_MODEL:
+    print(f"Using embedding model: {DEFAULT_EMBEDDING_MODEL}")
+    registry = EmbeddingFunctionRegistry.get_instance()
+    MODEL_NAME = DEFAULT_EMBEDDING_MODEL
+    
+    # Determine provider based on EMBEDDING_PROVIDER env var or model name
+    if EMBEDDING_PROVIDER:
+        provider = EMBEDDING_PROVIDER
+    elif "qwen" in DEFAULT_EMBEDDING_MODEL.lower() or DEFAULT_EMBEDDING_MODEL == "text-embedding-v4":
+        provider = "qwen"
+    elif DEFAULT_EMBEDDING_MODEL.startswith("text-embedding"):
+        provider = "openai"
+    elif DEFAULT_EMBEDDING_MODEL.startswith("jina-") or "jina" in DEFAULT_EMBEDDING_MODEL.lower():
+        provider = "jina"
+    elif DEFAULT_EMBEDDING_MODEL.startswith("embed-") or "cohere" in DEFAULT_EMBEDDING_MODEL.lower():
+        provider = "cohere"
+    elif "sentence-transformers" in DEFAULT_EMBEDDING_MODEL.lower() or "all-" in DEFAULT_EMBEDDING_MODEL.lower():
+        provider = "sentence-transformers"
+    else:
+        # Default to OpenAI if provider can't be determined
+        provider = "openai"
+        print(f"Provider not specified, defaulting to: {provider}")
+    
+    print(f"Using provider: {provider}")
+    try:
+        if provider == "qwen":
+            # Create Qwen embedding function through registry
+            model = registry.get("qwen").create(name=MODEL_NAME, max_retries=2)
+            EMBEDDING_DIM = model.ndims()
+            MAX_TOKENS = 8000  # Qwen supports up to 8192 tokens
+        else:
+            model = registry.get(provider).create(name=MODEL_NAME, max_retries=2)
+            EMBEDDING_DIM = model.ndims() if hasattr(model, 'ndims') else 1024
+            # Set MAX_TOKENS based on provider
+            if provider == "jina":
+                MAX_TOKENS = 4000
+            elif provider == "cohere":
+                MAX_TOKENS = 4096
+            elif provider == "sentence-transformers":
+                MAX_TOKENS = 512  # Typical for sentence transformers
+            else:  # OpenAI and others
+                MAX_TOKENS = 8000
+    except Exception as e:
+        print(f"Error creating model with provider '{provider}': {e}")
+        if provider != "openai":
+            print("Falling back to OpenAI")
+            model = registry.get("openai").create(name=MODEL_NAME, max_retries=2)
+            EMBEDDING_DIM = model.ndims()
+            MAX_TOKENS = 8000
+        else:
+            raise e
+elif os.getenv("JINA_API_KEY"):
     print("Using Jina")
     MODEL_NAME = "jina-embeddings-v3"
     registry = EmbeddingFunctionRegistry.get_instance()
@@ -63,7 +170,7 @@ if os.getenv("JINA_API_KEY"):
     EMBEDDING_DIM = 1024  # Jina's dimension
     MAX_TOKENS = 4000   # Jina uses a different tokenizer so it's hard to predict the number of tokens
 else:
-    print("Using OpenAI")
+    print("Using OpenAI (default)")
     MODEL_NAME = "text-embedding-3-large"
     registry = EmbeddingFunctionRegistry.get_instance()
     model = registry.get("openai").create(name=MODEL_NAME, max_retries=2)
@@ -127,7 +234,11 @@ if __name__ == "__main__":
 
     print(class_data.head())
 
-    uri = "database"
+    # Use parent database directory (where all tables are stored)
+    if os.path.exists("../database"):
+        uri = "../database"
+    else:
+        uri = "database"
     db = lancedb.connect(uri)
 
     # if codebase_path in db:

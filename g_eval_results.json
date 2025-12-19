@@ -1,0 +1,142 @@
+[
+  {
+    "id": "query1",
+    "query": "@codebase Explain the overall responsibility of GameManager in this project. What does it control and how does it interact with other systems",
+    "expected_answer": "GameManager is the central singleton responsible for bootstrapping the game. It initializes core managers, owns and updates the GameStateMachine, manages GamePhase transitions, initializes device quality settings, and controls debug behavior. It interacts with other systems via EventManager events, runtime-loaded manager prefabs, and the game state machine.",
+    "actual_answer": "The `GameManager` class in this project is responsible for initializing and managing the core systems of the game, primarily through a state machine architecture and dependency injection of various managers.\n\n### Responsibilities:\n1. **Initialization of Core Systems**:\n   - It initializes the `QualityManager` via `InitializeQualityManager()`, which manages device quality settings based on a configuration (`deviceQualityConfig`).\n   - It starts the initialization process via `StartCoroutine(Initialize())`, which sets up a dictionary (`stateFactory`) mapping game phases to their corresponding state classes (e.g., `LoadingState`, `HomeState`, `MatchPlayingState`, etc.).\n\n2. **Manager Initialization**:\n   - It attempts to load and instantiate various manager prefabs from `Resources` (e.g., `managersPath/{manager.name}`) using a retry mechanism with backoff.\n   - Each manager is expected to implement `IInitializableManager` interface, and upon successful initialization, it triggers an `OnInitialized` callback.\n   - Managers are instantiated with `DontDestroyOnLoad`, meaning they persist across scene changes.\n\n3. **Game State Management**:\n   - Once all required managers are initialized, it creates a `GameStateMachine` instance (`GSM`) and registers event listeners via `EventManager`.\n   - It listens for `GamePhase` changes via `EventManager.Register<GamePhase>(ChangeState)` to transition between game states dynamically.\n\n4. **Lifecycle Control**:\n   - The `Awake()` method calls both `Initialize()` and `InitializeQualityManager()` to ensure setup occurs early in the game lifecycle.\n   - It uses coroutines (`Initialize()`) to handle asynchronous loading and initialization of components.\n\n### Interaction with Other Systems:\n- **State Machine**: Uses `GameStateMachine` to manage transitions between game phases (e.g., from `ScreenLoading` to `MatchSearching`).\n- **Event System**: Relies on `EventManager` to trigger state changes and communicate between components.\n- **Managers**: Depends on multiple managers (e.g., network, audio, UI) that are loaded at runtime and must be initialized before the game state machine can fully operate.\n- **Quality Manager**: Integrates device quality checks to adapt gameplay behavior based on hardware capabilities.\n\n### Summary:\nThe `GameManager` acts as the central coordinator of the game’s startup sequence, system initialization, and overall flow control via a state machine. It ensures that all essential subsystems (managers) are properly loaded and initialized before enabling gameplay logic, while also adapting to device capabilities via the QualityManager.",
+    "score": 1.0
+  },
+  {
+    "id": "query2",
+    "query": "@codebase Which class is responsible for managing overall game state transitions, and how is the state machine instantiated?",
+    "expected_answer": "GameManager manages overall game state transitions. The GameStateMachine is instantiated inside GameManager after all required managers have finished initializing, specifically in InitManager() when the final manager reports successful initialization.",
+    "actual_answer": "The class responsible for managing overall game state transitions is `GameManager`.\n\nThe state machine is instantiated as `GSM = new GameStateMachine();` within the `Initialize` coroutine, specifically after all required managers have successfully loaded. This occurs when `countDone == managers.Length`, indicating that all managers have been initialized, and only then is the `GameStateMachine` created and configured.",
+    "score": 0.9
+  },
+  {
+    "id": "query3",
+    "query": "@codebase Where is the mapping between GamePhase values and concrete game state classes defined?",
+    "expected_answer": "The mapping is defined inside GameManager.Initialize(), where a stateFactory dictionary maps each GamePhase enum to a factory function that creates the corresponding game state instance.",
+    "actual_answer": "The mapping between `GamePhase` values and concrete game state classes is defined in the `Initialize` method of the `GameManager` class, specifically within the `stateFactory` dictionary initialization.\n\nThis is shown in the following code block:\n\n```csharp\nprivate IEnumerator Initialize()\n{\n    stateFactory =\n    new()\n    {\n        { GamePhase.ScreenLoading,                      gsm => new LoadingState(gsm) },\n        { GamePhase.MatchIdling,                        gsm => new HomeState(gsm) },\n        { GamePhase.MatchSearching,                     gsm => new MatchSearchingState(gsm) },\n        { GamePhase.MatchFindCanceling,                 gsm => new MatchCancelingState(gsm) },\n        { GamePhase.MatchFound,                         gsm => new MatchFoundState(gsm) },\n        { GamePhase.MatchPicking,                       gsm => new MatchPickingState(gsm) },\n        { GamePhase.MatchLoading,                       gsm => new MatchLoadingState(gsm) },\n        { GamePhase.MatchCountdown,                     gsm => new MatchCountdownState(gsm) },\n        { GamePhase.MatchPlaying,                       gsm => new MatchPlayingState(gsm) },\n        { GamePhase.MatchEnding,                        gsm => new MatchEndingState(gsm) },\n        { GamePhase.MatchLeaving,                       gsm => new MatchLeavingState(gsm) },\n        { GamePhase.MatchFinal,                         gsm => new FinalState(gsm) },\n        { GamePhase.Auth,                               gsm => new AuthState(gsm) },\n        { GamePhase.OnboardingMatchIdling,              gsm => new OnboardingMatchIdlingState(gsm) },\n    };\n```\n\nEach `GamePhase` enum value is mapped to a lambda that returns an instance of the corresponding game state class (e.g., `LoadingState`, `HomeState`, etc.) when invoked.",
+    "score": 1.0
+  },
+  {
+    "id": "query4",
+    "query": "@codebase Where should I hook in a new feature that runs right after a scene is loaded?",
+    "expected_answer": "Scene loading is handled by SceneLoader.LoadScene(string), but there is no built-in post-load hook in the codebase. The only scene-related callback shown is ReloadCurrentScene(), which reloads the active scene by name. Any post-scene-load feature would need to be triggered manually or via Unity scene lifecycle callbacks outside this code.",
+    "actual_answer": "The codebase does not provide a built-in hook or event system specifically for running code right after a scene is loaded.\n\nHowever, the `SceneLoader` class has a `LoadScene(string sceneName)` method that logs when a scene is loaded. The `ReloadCurrentScene()` method also uses `SceneManager.LoadScene`, but there is no callback or event mechanism (e.g., `OnSceneLoaded`) defined in the provided files to trigger custom logic after scene loading.\n\nTherefore, **there is no explicit hook available in the current codebase** to run a new feature immediately after a scene is loaded. You would need to implement such a hook manually, for example by adding an event system or using Unity's `SceneManager.sceneLoaded` delegate, but that functionality is not present in the provided code.\n\nAnswer: This behavior is not implemented in the provided files.",
+    "score": 1.0
+  },
+  {
+    "id": "query5",
+    "query": "@codebase What singleton classes are present in the codebase, and what responsibilities does each one have?",
+    "expected_answer": "The singleton classes present are GameManager and SceneLoader. GameManager controls manager initialization, game state transitions, quality management, and debug behavior. SceneLoader is responsible for loading and reloading Unity scenes by name. Both inherit from a generic Singleton<T> base class.",
+    "actual_answer": "The only singleton class explicitly present in the provided code is `EventManager`.\n\n### Singleton Class: `EventManager`\n- **Responsibility**: \n  - It is used to register and trigger events.\n  - It is referenced in the `Initialize` coroutine when setting up state changes via `EventManager.Register<GamePhase>(ChangeState)`.\n  - It is accessed via `EventManager.Instance`, indicating it is a singleton (though its implementation is not shown in the provided context).\n\nNo other singleton classes are present or referenced in the provided code. The `GameManager` itself is not implemented as a singleton in this context, though it may be intended to be one elsewhere (not visible here).",
+    "score": 0.3
+  },
+  {
+    "id": "query6",
+    "query": "@codebase Where in the code is the current active scene retrieved, and for what purpose?",
+    "expected_answer": "The current active scene is retrieved in SceneLoader.ReloadCurrentScene() using SceneManager.GetActiveScene(). Its purpose is to obtain the active scene name so the same scene can be reloaded.",
+    "actual_answer": "The current active scene is retrieved in the `ReloadCurrentScene` method of the `SceneLoader` class, specifically at this line:\n\n```csharp\nvar currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();\n```\n\nThis is done to obtain the name of the currently active scene so that it can be reloaded by calling `LoadScene(currentScene.name)`.\n\nPurpose: To reload the currently active scene, which is useful for resetting or restarting the current gameplay state without changing scenes. This is logged with a message indicating the scene being reloaded.",
+    "score": 1.0
+  },
+  {
+    "id": "query7",
+    "query": "@codebase How does the GameManager initialize its dependent managers, and in what order are they processed?",
+    "expected_answer": "GameManager initializes dependent managers sequentially using the InitManager coroutine. Managers are processed in the order they appear in the serialized managers array. Each manager is loaded, instantiated, initialized, and completed before the next manager starts.",
+    "actual_answer": "The `GameManager` initializes its dependent managers through the `InitManager()` coroutine, which processes managers in the order they appear in the `managers` array. \n\nEach manager is loaded by:\n1. Checking if it has a `NetworkType` of `Unused`; if so, it is skipped.\n2. Attempting to load the corresponding prefab from `Resources.Load<GameObject>($\"{managersPath}/{manager.name}\")` with up to 3 retries and a small delay (`WaitForSeconds(0.1f)`) between attempts.\n3. If the prefab loads successfully, an instance is created using `Instantiate(prefab)`, named with a prefix (`__{manager.name}`), and marked with `DontDestroyOnLoad`.\n4. The instance's `IInitializableManager` component is retrieved, and its `Initialize()` method is called.\n5. The `OnInitialized` callback is set to track success/failure, log results, update progress via `EventManager.TriggerEvent(new LoadingScreenParam { ... })`, and proceed to the next manager or finalize initialization when all are done.\n\nThe managers are processed sequentially in the order of their index in the `managers` array, starting from index `0` (as indicated by `countDone` initialized to `0` and incremented after each successful init). The process continues until `countDone >= managers.Length`.\n\nThis behavior is implemented in the `InitManager()` method, and the initialization sequence is driven by recursive calls to `StartCoroutine(InitManager())` after each manager completes.",
+    "score": 1.0
+  },
+  {
+    "id": "query8",
+    "query": "@codebase What mechanism is used to load manager prefabs at runtime, and where are those prefabs expected to be located?",
+    "expected_answer": "Manager prefabs are loaded at runtime using Resources.Load<GameObject>(). They are expected to be located under the Resources/Prefabs directory, with prefab names matching the manager configuration entries.",
+    "actual_answer": "Manager prefabs are loaded at runtime using `Resources.Load<GameObject>` with a path constructed as `${managersPath}/${manager.name}`.\n\nThe prefabs are expected to be located in the folder specified by the `managersPath` variable, within the Unity Resources folder (since `Resources.Load` is used). The exact path depends on the value of `managersPath`, which is not explicitly defined in the provided code but is assumed to be set elsewhere in the project.",
+    "score": 0.6
+  },
+  {
+    "id": "query9",
+    "query": "@codebase Which event system is used to trigger game state changes, and where is the registration performed?",
+    "expected_answer": "Game state changes are triggered using EventManager. GameManager registers its ChangeState(GamePhase) method with EventManager after all managers have finished initializing.",
+    "actual_answer": "The event system used to trigger game state changes is `EventManager`, as evidenced by the line:\n\n```csharp\nEventManager.Register<GamePhase>(ChangeState);\n```\n\nThis registration is performed in the `Initialize` coroutine, specifically after all managers have been initialized and `GSM` (GameStateMachine) has been created. The registration occurs only if `EventManager.Instance != null`, which is checked just before calling `Register`.\n\nThus:\n- **Event system**: `EventManager`\n- **Registration location**: Inside the `Initialize` coroutine, within the `if (EventManager.Instance != null)` block.",
+    "score": 0.9
+  },
+  {
+    "id": "query10",
+    "query": "@codebase Where are player-related keys such as user ID, role ID, and player name defined, and what are they derived from?",
+    "expected_answer": "Player-related keys are defined in Fusion.GameSystems.Constants. The keys are Key_UserID, Key_RoleID, and Key_PlayerName, and their values are derived using nameof() expressions referencing UserDocument.userID, UserDocument.roleID, and PlayerDocument.playerName.",
+    "actual_answer": "There is no logic for this in the current codebase. The player-related keys such as user ID, role ID, and player name are not defined or referenced anywhere in the provided code files.",
+    "score": 0.0
+  },
+  {
+    "id": "query11",
+    "query": "@codebase Which configuration controls device quality settings, and where is it initialized?",
+    "expected_answer": "Device quality settings are controlled by DeviceQualityConfig. The DeviceQualityManager is created and initialized in GameManager.InitializeQualityManager(), which is called during GameManager.Awake().",
+    "actual_answer": "The configuration that controls device quality settings is `deviceQualityConfig`, which is a serialized field in the `GameManager` class.\n\nIt is initialized in the `InitializeQualityManager()` method, where it is used to instantiate the `DeviceQualityManager`:\n\n```csharp\nprivate void InitializeQualityManager()\n{\n    QualityManager = new DeviceQualityManager(deviceQualityConfig);\n    QualityManager.Initialize();\n\n    Debug.Log($\"[GameManager] Quality Manager initialized - {QualityManager.GetQualityInfo()}\");\n}\n```\n\nThus:\n- **Configuration**: `deviceQualityConfig` (of type `DeviceQualityConfig`)\n- **Initialization location**: Inside the `InitializeQualityManager()` method of `GameManager`.",
+    "score": 1.0
+  },
+  {
+    "id": "query12",
+    "query": "@codebase Under what conditions are FPS and console debug objects enabled in the game loop?",
+    "expected_answer": "In the Unity Editor, FPS and console debug objects are always enabled. In non-editor builds, they are toggled when the user performs a five-touch input gesture.",
+    "actual_answer": "FPS and console debug objects are enabled under the following conditions in the game loop:\n\n- In the Unity Editor: Both `fPSDebug` and `consoleDebug` are always enabled (`SetActive(true)`).\n- In non-Editor builds: They are toggled when the touch count is 5 or more. Specifically, if `Input.touchCount >= 5`, then both `fPSDebug` and `consoleDebug` are set to their opposite active state (`!activeSelf`), meaning they toggle on/off with each five-finger touch.\n\nThis behavior is implemented in the `Update()` method of `GameManager.cs`.",
+    "score": 1.0
+  },
+  {
+    "id": "query13",
+    "query": "@codebase How does debug behavior differ between the Unity Editor and non-editor builds?",
+    "expected_answer": "In the Unity Editor, debug objects are force-enabled every frame. In non-editor builds, debug objects are disabled by default and can only be toggled via a five-touch gesture.",
+    "actual_answer": "In the provided code, debug behavior differs between the Unity Editor and non-editor builds as follows:\n\n- **In the Unity Editor**: The FPS debug UI (`fPSDebug`) and console debug UI (`consoleDebug`) are always active, as indicated by the `#if UNITY_EDITOR` directive that sets both objects to `SetActive(true)` unconditionally.\n\n- **In non-editor builds**: The debug UIs are toggled only when **five or more touches** occur on the screen. The code checks `Input.touchCount >= 5`, and if true, it toggles the active state of both `fPSDebug` and `consoleDebug` using `SetActive(!activeSelf)`.\n\nThus, in non-editor builds, debug UI visibility is controlled by a multi-touch gesture (5+ touches), while in the editor, it is permanently enabled.",
+    "score": 1.0
+  },
+  {
+    "id": "query14",
+    "query": "@codebase Is there any implemented logic that unloads or cleans up managers after they are initialized or when the application quits?",
+    "expected_answer": "No. There is no logic that unloads or cleans up managers. Managers marked with DontDestroyOnLoad persist for the entire application lifetime, and OnApplicationQuit only sets a static IsApplicationQuitting flag.",
+    "actual_answer": "There is no implemented logic in the provided code that explicitly unloads or cleans up managers after they are initialized or when the application quits.\n\nThe code shows that managers are instantiated with `DontDestroyOnLoad(instance)`, which ensures they persist across scene changes, but there is no corresponding cleanup or destruction logic (e.g., calling `Destroy` or implementing `IDisposable`) for these managers during shutdown or deinitialization. Additionally, no `OnApplicationQuit` or similar lifecycle method is present to handle cleanup.\n\nTherefore, the behavior of unloading or cleaning up managers is not implemented in the provided code.",
+    "score": 1.0
+  },
+  {
+    "id": "query15",
+    "query": "@codebase Is there any direct reference in the code that maps a specific GamePhase to a specific scene load operation?",
+    "expected_answer": "No. GamePhase transitions are handled by the GameStateMachine, while scene loading is handled separately by SceneLoader. There is no direct mapping between GamePhase values and scene load operations in the code.",
+    "actual_answer": "There is no direct reference in the provided code that maps a specific `GamePhase` to a specific scene load operation.\n\nThe `stateFactory` dictionary in the `Initialize` method maps `GamePhase` values to state factory functions (e.g., `gsm => new HomeState(gsm)`), but these are game states, not scene loading operations. There is no explicit logic or call within the code that loads a scene (e.g., using `SceneManager.LoadScene`) based on a `GamePhase`.\n\nTherefore, this behavior is not implemented in the provided code.",
+    "score": 1.0
+  },
+  {
+    "id": "query16",
+    "query": "@codebase How is the GameStateMachine updated every frame, and where does this update occur?",
+    "expected_answer": "The GameStateMachine is updated in GameManager.Update(), where GSM?.Update() is called once per frame if the state machine has been initialized.",
+    "actual_answer": "The `GameStateMachine` is updated every frame in the `Update()` method of the `GameManager` class.\n\nThis occurs at the line:\n```csharp\nGSM?.Update();\n```\n\nHere, `GSM` is a reference to the `GameStateMachine`, and the `?.` operator ensures that `Update()` is called only if `GSM` is not null. The update logic is therefore executed every frame within the `GameManager`'s `Update()` method.",
+    "score": 1.0
+  },
+  {
+    "id": "query17",
+    "query": "@codebase Where is the default network region defined, and how is it used in the code?",
+    "expected_answer": "The default network region is defined as a static string fixedRegion = \"asia\" in GameManager. It is declared but not referenced or used anywhere else in the provided code.",
+    "actual_answer": "The default network region is defined in the `GameManager` class as a static string:\n\n```csharp\npublic static string fixedRegion = \"asia\"; // default region\n```\n\nThis value is set to `\"asia\"` and appears to be intended for use in network-related operations, such as selecting a server region. However, **there is no logic in the provided code that uses or references `fixedRegion`**. The variable is declared but not accessed or utilized anywhere in the shown methods or classes.\n\nTherefore:\n- **Where it is defined**: In the `GameManager` class as `public static string fixedRegion = \"asia\";`.\n- **How it is used**: There is no evidence in the provided code that `fixedRegion` is used. It is declared but not referenced in any method, initialization, or configuration logic.\n\nConclusion: The default network region is defined as `\"asia\"`, but its usage is **not implemented** in the current codebase.",
+    "score": 1.0
+  },
+  {
+    "id": "query18",
+    "query": "@codebase How does the GameManager prevent duplicate or redundant game state transitions?",
+    "expected_answer": "GameManager prevents redundant state transitions by checking if the requested GamePhase is the same as the currentState in ChangeState(GamePhase stateType). If they are equal, the method returns early without changing the state.",
+    "actual_answer": "The `GameManager.ChangeState` method prevents duplicate or redundant game state transitions by checking if the current state (`currentState`) is already equal to the requested `stateType`. If they are the same, the method returns immediately without making any changes.\n\nThis is implemented via the following condition:\n```csharp\nif (currentState == stateType) return;\n```\n\nThus, the GameManager ensures that no state transition occurs when the desired state is already active, thereby preventing redundant or duplicate transitions.",
+    "score": 1.0
+  },
+  {
+    "id": "query19",
+    "query": "@codebase Where and how is the list of managers to be initialized defined?",
+    "expected_answer": "The list of managers is defined in GameManager as a serialized array of ManagerConfig objects. If the array is empty or null, it is populated in OnValidate() with a default list of manager names and initialization settings.",
+    "actual_answer": "The list of managers to be initialized is defined by the `managers` array, which is referenced in the `InitManager()` and `Initialize()` methods. This array is used to iterate through each manager, check its `networkType`, load its prefab from `Resources.Load<GameObject>($\"{managersPath}/{manager.name}\")`, and initialize it.\n\nHowever, the actual declaration or definition of the `managers` array (i.e., its type, initialization, or content) is **not present** in the provided code snippets. Therefore, while the code shows how the list is used, it does not show where or how the list itself is defined.\n\nAnswer: The list of managers is used via the `managers` variable, but its definition is not present in the provided code.",
+    "score": 0.3
+  },
+  {
+    "id": "query20",
+    "query": "@codebase What happens if a manager fails to initialize successfully during startup?",
+    "expected_answer": "If a manager fails to initialize, an error is logged and a popup event is triggered using EventManager. The initialization process then continues, and GameManager proceeds to initialize the remaining managers rather than stopping execution.",
+    "actual_answer": "If a manager fails to initialize successfully during startup, the following occurs:\n\n1. The initialization failure is logged with `Debug.LogError` using a message that includes the manager's name and the error details.\n2. The failed initialization is recorded in the `initTasks` list with the manager's name, `isLoaded = false`, and the error message.\n3. A popup is triggered via `EventManager.TriggerEvent(new ShowPopupEvent(...))` to display an informative message: `\"Initialization failed for manager: {manager.name}\"`.\n4. The system continues to initialize other managers (if any remain), as the `countDone` counter is not incremented for failed managers.\n5. If all managers are initialized (including those that failed), a detailed summary of initialization results is logged, showing which managers succeeded or failed.\n\nThis behavior is implemented in the `InitManager()` coroutine, specifically within the `catch` block and the `OnInitialized` callback when `success` is `false`.",
+    "score": 1.0
+  }
+]

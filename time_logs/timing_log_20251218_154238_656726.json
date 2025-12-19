@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-18T15:42:33.605657",
+  "user_id": "f379bba3-48e7-4397-ac88-23183387853b",
+  "query": "@codebase Where is the default network region defined, and how is it used in the code?",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "Where is the default network region defined, and how is it used in the code?",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.8,
+      "ttft": 0.38,
+      "token_count": 8,
+      "token_rate": 19.0,
+      "response_length": 147
+    },
+    "vector_search_time": 0.55,
+    "total_time": 1.35,
+    "context_length": 23350,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 23350,
+    "truncated_length": 8000
+  },
+  "answer_generation": {
+    "total_time": 3.65,
+    "ttft": 0.33,
+    "token_count": 52,
+    "token_rate": 15.7,
+    "response_length": 901
+  },
+  "total_time": 5.05
+}

@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-12-18T10:39:22.059085",
+  "user_id": "d766551b-cbc7-480f-8a92-d8e18b9f2b37",
+  "query": "@codebase If I change the GamePlay scene ID, what other code will break or need to be updated?",
+  "rerank_enabled": false,
+  "context_retrieval": {
+    "query": "If I change the GamePlay scene ID, what other code will break or need to be updated?",
+    "rerank_enabled": false,
+    "hyde_generation": {
+      "total_time": 10.59,
+      "ttft": 0.31,
+      "token_count": 120,
+      "token_rate": 11.7,
+      "response_length": 2057
+    },
+    "hyde_v2_generation": {
+      "total_time": 8.46,
+      "ttft": 3.99,
+      "token_count": 50,
+      "token_rate": 11.2,
+      "response_length": 891
+    },
+    "vector_search_time": 1.0,
+    "total_time": 20.05,
+    "context_length": 29075,
+    "results_count": {
+      "methods": 5,
+      "classes": 5
+    }
+  },
+  "context_truncated": {
+    "original_length": 29075,
+    "truncated_length": 12000
+  },
+  "answer_generation": {
+    "total_time": 30.47,
+    "ttft": 0.66,
+    "token_count": 307,
+    "token_rate": 10.3,
+    "response_length": 5670
+  },
+  "total_time": 50.57
+}

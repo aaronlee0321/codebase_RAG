@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T16:07:43.370784",
+  "user_id": "ee75d610-89a9-4f34-8af8-52e33ebe2ce5",
+  "query": "@ProjectileDocument.cs what is Hitmask's data type",
+  "cleaned_query": "what is Hitmask's data type",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Data\\ProjectileDocument.cs"
+  ],
+  "context_retrieval": {
+    "query": "what is Hitmask's data type",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.57,
+      "ttft": 0.26,
+      "token_count": 7,
+      "token_rate": 22.9,
+      "response_length": 86
+    },
+    "vector_search_time": 1.11,
+    "total_time": 1.68,
+    "context_length": 1918,
+    "results_count": {
+      "methods": 0,
+      "classes": 1
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.43,
+    "ttft": 0.29,
+    "token_count": 6,
+    "token_rate": 41.2,
+    "response_length": 33
+  },
+  "total_time": 2.13
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-12-19T13:17:39.132373",
+  "user_id": "c90b83da-7931-47d5-b0f5-1fdd427156f5",
+  "query": "@AbilityKamikaze.cs list all variables",
+  "cleaned_query": "list all variables",
+  "rerank_enabled": false,
+  "file_filters": [
+    "C:\\Users\\CPU12391\\Desktop\\GDD_RAG_Gradio\\codebase_RAG\\tank_online_1-dev\\Assets\\_GameModules\\TankFusionModule\\Scripts\\Ability\\AbilityKamikaze.cs"
+  ],
+  "context_retrieval": {
+    "query": "list all variables",
+    "rerank_enabled": false,
+    "hyde_v2_generation": {
+      "total_time": 0.73,
+      "ttft": 0.27,
+      "token_count": 8,
+      "token_rate": 17.6,
+      "response_length": 114
+    },
+    "vector_search_time": 0.75,
+    "total_time": 1.48,
+    "context_length": 46,
+    "results_count": {
+      "methods": 0,
+      "classes": 0
+    }
+  },
+  "answer_generation": {
+    "total_time": 0.5,
+    "ttft": 0.26,
+    "token_count": 6,
+    "token_rate": 25.4,
+    "response_length": 51
+  },
+  "total_time": 1.98
+}
